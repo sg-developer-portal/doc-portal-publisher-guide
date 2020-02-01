@@ -4,9 +4,11 @@ You will need a [TechPass](https://www.techpass.gov.sg) account to host your doc
 
 ## Hosting your documentation
 
-### Sign in with TechPass
+### 1. Sign in with TechPass
 
-### Link your account to your Gitlab.com account
+### 2. Link your account to your Gitlab.com account
+
+Once signed in, go to the account tab and click on the "authorize to Gitlab" link. You will be directed to your Gitlab account and you will have to grant OAuth permissions for the documentation portal to pull your documentation repository and host it.
 
 Once your Gitlab project is linked to the documentation portal, it will automatically pull your repository's markdown files upon every push to your master branch and host them. Changes will be almost instantaneous.
 
