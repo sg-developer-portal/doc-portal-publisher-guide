@@ -9,3 +9,7 @@ You will need a [TechPass](https://www.techpass.gov.sg) account to host your doc
 ### Link your account to your Gitlab.com account
 
 Once your Gitlab project is linked to the documentation portal, it will automatically pull your repository's markdown files upon every push to your master branch and host them. Changes will be almost instantaneous.
+
+### Create your Docsify project
+
+The easiest way to get started with Docsify is through its [command line tool](https://docsify.js.org/#/quickstart). You will need to have Node.js and NPM installed on your machine.
