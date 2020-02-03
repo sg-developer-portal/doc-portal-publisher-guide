@@ -1,3 +1,5 @@
 * [Home](/)
 * [Get started](get-started)
 * [Docsify configuration](docsify-configuration)
+* [Writing documentation](writing-documentation)
+* [How Documentation Portal works](how-documentation-portal-works)

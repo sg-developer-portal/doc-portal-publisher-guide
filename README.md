@@ -4,6 +4,10 @@
 
 Developers can now write their project documentation with markdown files in their own git repositories, which are automatically synced to the documentation portal.
 
+## Why write technical documentation?
+
+Every piece of software that is meant to be reused needs proper user-facing documentation. [Read more about writing documentation](writing-documentation).
+
 ### Public and private documentation
 
 Users can choose whether their documentation sites are public-facing or behind a TechPass login.
