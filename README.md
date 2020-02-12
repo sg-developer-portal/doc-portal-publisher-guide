@@ -14,7 +14,7 @@ Users can choose whether their documentation sites are public-facing or behind a
 
 ### Start writing documentation
 
-You will need a [TechPass](https://portal.techpass.gov.sg) and free [Gitlab](https://www.gitlab.com) account. The documentation portal makes use of [Docsify](https://docsify.js.org) to render your markdown documentation. [Get started here](get-started).
+You will need a [TechPass](https://portal.techpass.gov.sg) and free [github.com](https://www.github.com) account. The documentation portal makes use of [Docsify](https://docsify.js.org) to render your markdown documentation. [Get started here](get-started).
 
 ### Showcase
 
