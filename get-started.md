@@ -1,6 +1,6 @@
 # Get started
 
-You will need a [TechPass](https://www.techpass.gov.sg) account to host your documentation, as well as a free [Gitlab.com](https://gitlab.com) to host your documentation's git repository. You will also need to use [Docsify](https://docsify.js.org) to structure and view your documentation locally before you push it up your repository. 
+You will need a [TechPass](https://www.techpass.gov.sg) account to host your documentation, as well as a free [github.com](https://github.com) to host your documentation's git repository. You will also need to use [Docsify](https://docsify.js.org) to structure and view your documentation locally before you push it up your repository. 
 
 ## Hosting your documentation
 
@@ -8,9 +8,9 @@ You will need a [TechPass](https://www.techpass.gov.sg) account to host your doc
 
 After acquiring your TechPass account, click on the Log In button on the [home page](/).
 
-### 2. Link your account to your Gitlab.com account
+### 2. Link your account to your github.com account
 
-Once signed in, go to the account tab and click on the "authorize to Gitlab" link. You will be directed to your Gitlab account and you will have to grant OAuth permissions for the documentation portal to pull your documentation repository and host it.
+Once signed in, go to the account tab and click on the "authorize to GitHub" link. You will be directed to your GitHub account and you will have to grant OAuth permissions for the documentation portal to pull your documentation repository and host it.
 
 ### 3. Create your Docsify project
 
@@ -35,11 +35,11 @@ The easiest way to get started with Docsify is through its [command line tool](h
   
   2. Commit your markdown files (it is not necessary to commit your index.html file - it will not affect your documentation on the documentation portal).
 
-  3. Create a new Gitlab.com project and push your new repository to that project.
+  3. Create a new github.com project and push your new repository to that project.
 
-### 4. Activate your Gitlab project on Documentation Portal
+### 4. Activate your GitHub project on Documentation Portal
 
-Once your Gitlab project is linked to the documentation portal, you will be able to activate it from the documentation portal. 
+Once your GitHub project is linked to the documentation portal, you will be able to activate it from the documentation portal. 
 
 Activation means that every push to your documentation on the `master` branch will be automatically pulled and served by the documentation portal. Changes will be almost instantaneous.
 
