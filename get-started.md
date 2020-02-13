@@ -43,7 +43,7 @@ The easiest way to get started with Docsify is through its [command line tool](h
   
   2. Commit your markdown files (not that your index.html file will not affect your documentation on the documentation portal).
 
-  3. Create a new github.com project and push your new repository to that project.
+  3. Create a new github.com project and push your new repository to that project. Note that you should have at least a `README.md` file at the **root** of your project, which will serve as the home page for your documentation.
 
 ### 4. Publish your documentation on Documentation Portal
 
