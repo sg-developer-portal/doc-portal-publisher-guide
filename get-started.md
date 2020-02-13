@@ -1,8 +1,16 @@
 # Get started
 
-You will need a [TechPass](https://www.techpass.gov.sg) account to host your documentation, as well as a free [github.com](https://github.com) to host your documentation's git repository. You will also need to use [Docsify](https://docsify.js.org) to structure and view your documentation locally before you push it up your repository. 
+## Overview
 
-## Hosting your documentation
+The documentation portal syncs up your documentation repository containing Markdown or Swagger files and hosts them as documentation pages.
+
+You will need a [TechPass](https://www.techpass.gov.sg) account to log in and host your documentation, as well as a free [github.com](https://github.com) to host your documentation's git repository.
+
+If your documentation is in Markdown, you will need [Docsify](https://docsify.js.org) to structure and view it on your development machine before pushing it to your GitHub repository.
+
+If your documentation is in Swagger, i.e. you are writing API documentation, you will need [Redoc](https://github.com/Redocly/redoc) to view it on your development machine before pushing your `swagger.json` file to your GitHub repository.
+
+## Quickstart with Docsify
 
 ### 1. Sign in with TechPass
 
@@ -33,13 +41,13 @@ The easiest way to get started with Docsify is through its [command line tool](h
 
   [Learn how Docsify works](https://docsify.js.org).
   
-  2. Commit your markdown files (it is not necessary to commit your index.html file - it will not affect your documentation on the documentation portal).
+  2. Commit your markdown files (not that your index.html file will not affect your documentation on the documentation portal).
 
   3. Create a new github.com project and push your new repository to that project.
 
-### 4. Activate your GitHub project on Documentation Portal
+### 4. Publish your documentation on Documentation Portal
 
-Once your GitHub project is linked to the documentation portal, you will be able to activate it from the documentation portal. 
+Once your GitHub repository is linked to the documentation portal, you will be able to activate it from the documentation portal. 
 
 Activation means that every push to your documentation on the `master` branch will be automatically pulled and served by the documentation portal. Changes will be almost instantaneous.
 
