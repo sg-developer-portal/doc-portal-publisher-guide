@@ -47,8 +47,8 @@ The easiest way to get started with Docsify is through its [command line tool](h
 
 ### 4. Publish your documentation on Documentation Portal
 
-Once your GitHub repository is linked to the documentation portal, you will be able to activate it from the documentation portal. 
+Once your GitHub repository is linked to the documentation portal, you will be able to publish it from the documentation portal. 
 
 Activation means that every push to your documentation on the `master` branch will be automatically pulled and served by the documentation portal. Changes will be almost instantaneous.
 
-If you activate a project in `public` mode, it will be accessible from the internet. If you choose `restricted` mode, only users logged in to Documentation Portal will be able to see it.
+If you publish a project in `public` mode, it will be accessible from the internet. If you choose `restricted` mode, only users logged in to Documentation Portal will be able to see it.
