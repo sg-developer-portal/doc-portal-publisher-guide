@@ -6,7 +6,7 @@ Developers can now write their project documentation with markdown files in thei
 
 ## Why write technical documentation?
 
-Every piece of software that is meant to be reused needs proper user-facing documentation. [Read more about writing documentation](writing-documentation).
+Every piece of software that is meant to be reused needs proper user-facing documentation. [Read more about writing documentation](advanced/writing-documentation).
 
 ### Public and private documentation
 
@@ -14,7 +14,12 @@ Users can choose whether their documentation sites are public-facing or behind a
 
 ### Start writing documentation
 
-You will need a [TechPass](https://portal.techpass.gov.sg) and free [github.com](https://www.github.com) account. The documentation portal makes use of [Docsify](https://docsify.js.org) to render your markdown documentation. [Get started here](get-started).
+The Documentation Portal supports two documentation formats:
+
+- Markdown, rendered through [Docsify](https://docsify.js.org)
+- OpenAPI (also known as Swagger) definitions in JSON or YAML, rendered through [ReDoc](https://github.com/redocly/redoc)
+
+You will need a [TechPass](https://portal.techpass.gov.sg) and free [github.com](https://www.github.com) account. [Get started here](get-started).
 
 ### Showcase
 
