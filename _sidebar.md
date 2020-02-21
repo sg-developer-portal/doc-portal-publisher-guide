@@ -4,3 +4,4 @@
   * [Docsify configuration](advanced/docsify-configuration)
   * [Writing documentation](advanced/writing-documentation)
   * [How Documentation Portal works](advanced/how-documentation-portal-works)
+  * [Markdown features](advanced/markdown-features)
