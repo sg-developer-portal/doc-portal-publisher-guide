@@ -1,4 +1,9 @@
-## Actual syntax
+## Markdown Features
+
+!> Docsify also provides [some useful extensions to markdown](https://docsify.now.sh/helpers)
+
+### Raw Markdown
+
 ```markdown
 # h1 Heading
 
@@ -87,7 +92,7 @@ Syntax highlighting
 
 \`\`\`js
 var foo = function(bar) {
-  return bar++;
+return bar++;
 };
 
 console.log(foo(5));
@@ -129,8 +134,8 @@ Like links, Images also have a footnote style syntax
 With a reference later in the document defining the URL location:
 
 [id]: https://octodex.github.com/images/dojocat.jpg "The Dojocat"
-
 ```
+
 ## Rendered Output
 
 # h1 Heading
