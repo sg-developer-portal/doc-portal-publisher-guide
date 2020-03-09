@@ -1,6 +1,6 @@
 # Docsify configuration
 
-Documentation portal uses a standard set of Docsify settings and styles to render your documentation.
+Documentation portal uses a standard set of Docsify settings and styles to render your documentation. It does not read from your repository's `index.html` file. Some of these settings are configurable [from the portal](#manually-configurable-docsify-settings).
 
 To see exactly how your own documentation pages would look like, use the following settings in your index.html file.
 
