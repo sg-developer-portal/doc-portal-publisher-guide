@@ -2,7 +2,7 @@
 
 Documentation portal uses a standard set of Docsify settings and styles to render your documentation. It does not read from your repository's `index.html` file. Some of these settings are configurable [from the portal](#manually-configurable-docsify-settings).
 
-To see exactly how your own documentation pages would look like, use the following settings in your index.html file.
+To see exactly how your own documentation pages would look like, use the following `window.$docsify` settings in your index.html file.
 
 ```html
 <!DOCTYPE html>
@@ -19,11 +19,11 @@ To see exactly how your own documentation pages would look like, use the followi
     <script>
       window.$docsify = {
         el: "#app",
+        auto2top: true,
         loadSidebar: true,
         subMaxLevel: 2, // For automatic 2nd level headings
-        search: "auto", // Search pages defined on your sidebar
-        coverpage: true,
         themeColor: "#0c60c7"
+        search: "auto", // Search pages defined on your sidebar
       };
     </script>
     <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
