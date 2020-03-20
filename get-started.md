@@ -18,37 +18,81 @@ After acquiring your TechPass account, click on the Log In button on the [home p
 
 ### 2. Link your account to your github.com account
 
-Once signed in, go to the account tab and click on the "authorize to GitHub" link. You will be directed to your GitHub account and you will have to grant OAuth permissions for the documentation portal to pull your documentation repository and host it.
+Once signed in, go to your `account` page and click on the "authorize to GitHub" link. You will be directed to your GitHub account and you will have to grant OAuth permissions for the documentation portal to pull your documentation repository and host it.
 
 ### 3. Create your Docsify project
 
-The easiest way to get started with Docsify is through its [command line tool](https://docsify.js.org/#/quickstart). You will need to have Node.js and NPM installed on your machine.
+The easiest way to get started with Docsify is through its [command line tool](https://docsify.js.org/#/quickstart).
 
-1. Use the Docsify CLI to scaffold your project. This creates a README.md and index.html file within your working directory.
+1. You will need to have Node.js and NPM installed on your machine. Use the [official installer](https://nodejs.org/en/) or
+   the [nvm tool](https://github.com/nvm-sh/nvm).
+
+2. Create a Git repository to hold your documentation.
 
 ```bash
-# Within your project directory
+mkdir my-docs
+cd my-docs
+git init
+```
+
+3. Use the [Docsify CLI](https://docsify.js.org/#/quickstart) to generate a documentation site. This creates the README.md and index.html files within your working directory.
+
+```bash
+# Install Docsify CLI
 npm install -g docsify-cli
-docsify init . # creates index.html and README.md within your working directory
+# Create an index.html and README.md within your working directory
+docsify init .
 ```
 
-Alternatively, use npx to directly run docsify-cli:
+4. Start up a live-reloading server for your documentation.
+
+```
+docsify serve .
+```
+
+4. Commit your markdown files [(note that your index.html file will not affect your documentation on the documentation portal)](advanced/docsify-configuration).
 
 ```bash
-npx docsify-cli init .
-npx docsify-cli serve .
+git add --all
+git commit -m "Initial commit"
 ```
 
-[Learn how Docsify works](https://docsify.js.org).
+5. [Create a new github.com project](https://github.com/new) (this can be either public or private) and follow
+   the instructions on GitHub to push your new repository to that project.
 
-2. Commit your markdown files [(note that your index.html file will not affect your documentation on the documentation portal)](advanced/docsify-configuration).
+```bash
+# Either SSH authentication
+git remote add origin git@github.com/my-username/my-project.git
+# Or HTTP
+git remote add origin https://github.com/my-username/my-project.git
 
-3. Create a new github.com project and push your new repository to that project. Note that you should have at least a `README.md` file at the **root** of your project, which will serve as the home page for your documentation.
+# Push to the master branch of your GitHub project
+git push -u origin master
+```
+
+Note that you should have at least a `README.md` file at the **root** of your project, which will serve as the home page for your documentation.
 
 ### 4. Publish your documentation on Documentation Portal
 
 Once your GitHub repository is linked to the documentation portal, you will be able to publish it from the documentation portal.
 
-Activation means that every push to your documentation on the `master` branch will be automatically pulled and served by the documentation portal. Changes will be almost instantaneous.
+Go to your `account` page, find the GitHub repository holding your documentation and click "Publish".
 
-If you publish a project in `public` mode, it will be accessible from the internet. If you choose `restricted` mode, only users logged in to Documentation Portal will be able to see it.
+![Account page screenshot](assets/account_screen.png ":size=450 :class=bordered-black")
+
+In the publish menu:
+
+1. Set "Documentation visibility" to "Public".
+2. Set "Documentation Technology" to "Markdown".
+3. Fill in the display name for your documentation page.
+4. Click "Publish this project".
+
+![Publish settings screenshot](assets/publish_settings.png ":size=300 :class=bordered-black")
+
+Once published, your documentation will be hosted at docs.developer.gov.sg. All changes made to your GitHub repository would be automatically
+synced to the documentation portal.
+
+> Activation means that every push to your documentation on the `master` branch will be automatically pulled and served by the documentation portal.
+
+> If you publish a project in `public` mode, it will be accessible from the internet. If you choose `private` mode,
+> only users logged in to Documentation Portal through TechPass will be able to see it.
