@@ -34,7 +34,7 @@ To see exactly how your own documentation pages would look like, use the followi
 
 ## Manually configurable Docsify settings
 
-![Docsify settings](../assets/docsify-settings.png ':size=300%')
+![Docsify settings](../assets/docsify_settings.png ':size=300%')
 
 You can specify certain configurations that would be present on the`window.$docsify` object when publishing.
 
