@@ -75,7 +75,7 @@ The easiest way to get started with Docsify is through its [command line tool](h
 
 ### 4. Publish your documentation on Documentation Portal
 
-> Make sure you have pushed changes made to your documentation files to the master branch on GitHub! 
+> Make sure you have **pushed** changes made to your documentation files to the master branch on GitHub! 
 
 Once your GitHub repository is linked to the documentation portal, you will be able to publish it from the documentation portal.
 
