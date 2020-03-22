@@ -92,7 +92,7 @@ In the publish menu:
 Once published, your documentation will be hosted at docs.developer.gov.sg. All changes made to your GitHub repository would be automatically
 synced to the documentation portal.
 
-> Activation means that every push to your documentation on the `master` branch will be automatically pulled and served by the documentation portal.
+> When published, every push to your documentation files on the `master` branch will be automatically pulled and served by the documentation portal.
 
 > If you publish a project in `public` mode, it will be accessible from the internet. If you choose `private` mode,
 > only users logged in to Documentation Portal through TechPass will be able to see it.
