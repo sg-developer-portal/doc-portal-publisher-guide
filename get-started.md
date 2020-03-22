@@ -46,7 +46,7 @@ docsify init .
 
 4. Start up a live-reloading server for your documentation.
 
-```
+```bash
 docsify serve .
 ```
 
