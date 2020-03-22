@@ -1,3 +1,5 @@
+## Why write documentation
+
 It doesn’t matter how good your software is, because if the documentation is not good enough, people will not use it.
 
 Even if for some reason they have to use it because they have no choice, without good documentation, they won’t use it effectively or the way you’d like them to.
