@@ -14,7 +14,7 @@ If your documentation is in OpenAPI/Swagger, i.e. you are writing API documentat
 
 ### 1. Sign in with TechPass
 
-After acquiring your TechPass account, click on the Log In button on the [home page](/).
+[Acquire your TechPass account](https://dev.docs.developer.gov.sg/docs/public/244557586/techpass-user-docs/ ':target=_blank') and sign in using the "Log in with TechPass" button on the top nav bar.
 
 ### 2. Link your account to your github.com account
 
