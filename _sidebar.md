@@ -3,7 +3,8 @@
 * [Docsify configuration](docsify-configuration)
 * [Writing documentation](writing-documentation)
 * Advanced
-  * [Working in teams](advanced/working-in-teams)
+  * [Teams and permissions](advanced/teams-and-permissions)
+  * [Collaborative publishing](advanced/collaborative-publishing)
   * [How Documentation Portal works](advanced/how-documentation-portal-works)
   * [Markdown features](advanced/markdown-features)
   * [Showcase](advanced/showcase)
