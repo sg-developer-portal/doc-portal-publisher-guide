@@ -1,4 +1,4 @@
-# Documentation portal user guide
+# Documentation portal publisher guide
 
 ## What is the documentation portal?
 
