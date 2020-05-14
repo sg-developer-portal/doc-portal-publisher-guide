@@ -3,7 +3,7 @@
 Mermaid is a tool that enables you to write diagrams and flowcharts using Markdown. It
 is supported out of the box on Documentation Portal.
 
-Some examples of Mermaid diagrams can be found [below](#flowcharts). For usage instructions,
+Some examples of Mermaid diagrams can be found [below](#flowcharts). For usage instructions
 and the full range of supported diagrams,
 visit [https://mermaid-js.github.io/mermaid](https://mermaid-js.github.io/mermaid).
 
@@ -50,7 +50,33 @@ configuration in your `index.html` file as shown below:
 </body>
 ```
 
-## Flowcharts
+## Writing Mermaid diagrams
+
+To write a Mermaid diagram, simply use a code block with the language type set to `mermaid`:
+
+``````
+```mermaid
+graph TD;
+   A-->B;
+   A-->C;
+   B-->D;
+   C-->D;
+```
+``````
+
+Renders
+
+```mermaid
+graph TD;
+   A-->B;
+   A-->C;
+   B-->D;
+   C-->D;
+```
+
+## Examples
+
+### Flowcharts
 
 ```
 graph TD
@@ -68,7 +94,7 @@ C -->|One| D[Result 1]
 C -->|Two| E[Result 2]
 ```
 
-## State Diagrams
+### State Diagrams
 
 ```
 stateDiagram
@@ -92,7 +118,7 @@ stateDiagram
     Crash --> [*]
 ```
 
-## Sequence Diagrams
+### Sequence Diagrams
 
 ```
 sequenceDiagram
@@ -118,7 +144,7 @@ John->>Bob: How about you?
 Bob-->>John: Jolly good!
 ```
 
-## Pie Charts
+### Pie Charts
 
 ```
 pie
