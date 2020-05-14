@@ -1,8 +1,108 @@
-## Docsify Extensions
+## Docsify Markdown Extensions
 
-?> Docsify provides [some useful extensions to markdown](https://docsify.now.sh/helpers)
+?> Docsify provides [some useful extensions to markdown](https://docsify.js.org/#/helpers). Some examples are shown below.
 
-### Raw Markdown
+### Content highlighting
+
+Use `?>` and `!>` before text to highlight blocks of content:
+
+```markdown
+?> This is highlighted
+
+!> And so am I
+```
+
+?> This is highlighted
+
+!> And so am I
+
+### Image resizing
+
+```
+![logo](https://docsify.js.org/_media/icon.svg)
+![logo](https://docsify.js.org/_media/icon.svg ':size=50x100')
+![logo](https://docsify.js.org/_media/icon.svg ':size=100')
+![logo](https://docsify.js.org/_media/icon.svg ':size=45%')
+```
+
+![logo](https://docsify.js.org/_media/icon.svg)
+![logo](https://docsify.js.org/_media/icon.svg ":size=50x100")
+![logo](https://docsify.js.org/_media/icon.svg ":size=100")
+![logo](https://docsify.js.org/_media/icon.svg ":size=45%")
+
+### Set target attribute for link
+
+```
+[link](/example ':target=_blank')
+[link](/example2 ':target=_self')
+```
+
+[link](/example ":target=_blank")
+[link](/example2 ":target=_self")
+
+### Disabled Link
+
+```
+[link](/demo ':disabled')
+```
+
+[link](/demo ":disabled")
+
+## HTML
+
+Some useful HTML elements are available for adding default interactivity and illustrations.
+
+### Details/summary for dropdown content
+
+```markdown
+<hr />
+<details>
+  <summary>Click me to expand!</summary>
+
+I can contain markdown content too. Just leave a newline between markdown and HTML elements.
+
+- Abc
+- Def
+
+</details>
+<hr />
+```
+
+<hr />
+<details>
+  <summary>Click me to expand!</summary>
+
+I can contain markdown content too. Just leave a newline between markdown and HTML elements.
+
+- Abc
+- Def
+
+</details>
+<hr />
+
+### Progress/meter bars
+
+```html
+<progress value="70" max="100"></progress>
+
+<meter
+  min="0" max="100"
+  low="33" high="66" optimum="80"
+  value="50">
+Current value: 50/100
+</meter>
+```
+
+<progress value="70" max="100"></progress>
+
+<meter
+  min="0" max="100"
+  low="33" high="66" optimum="80"
+  value="50">
+Current value: 50/100
+</meter>
+
+## Markdown Syntax
 
 ```markdown
 # h1 Heading
@@ -224,7 +324,7 @@ Sample text here...
 Syntax highlighting
 
 ```js
-var foo = function(bar) {
+var foo = function (bar) {
   return bar++;
 };
 
