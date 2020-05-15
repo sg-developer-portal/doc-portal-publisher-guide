@@ -12,13 +12,6 @@ and edit your Docsify
 configuration in your `index.html` file as shown below:
 
 ```html
-<head>
-  <!-- Import mermaid's styles -->
-  <link
-    rel="stylesheet"
-    href="//cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.css"
-  />
-</head>
 <body>
 
   <!-- Import mermaid.js, BEFORE the window.$docsify initialisation -->
