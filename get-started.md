@@ -97,7 +97,8 @@ synced to the documentation portal.
 
 > When published, every push to your documentation files on the `master` branch will be automatically pulled and served by the documentation portal.
 
-> If you publish a project in `public` mode, it will be accessible from the internet. If you choose `private` mode,
+> If you publish a project in `public` mode, it will be publicly accessible from the internet.
+> If you choose `private` mode,
 > only users logged in to Documentation Portal through TechPass will be able to see it.
 
 ?> For more information, see [how documentation portal works](advanced/how-documentation-portal-works).

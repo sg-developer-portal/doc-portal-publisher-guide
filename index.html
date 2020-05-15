@@ -9,25 +9,33 @@
       name="viewport"
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
+    <!-- Import for documentation portal styles -->
     <link
       rel="stylesheet"
-      href="https://unpkg.com/@docs-gov-sg/doc-theme-default/public/dist/doc.css"
+      href="//cdn.jsdelivr.net/npm/@docs-gov-sg/doc-theme-default/public/dist/doc.css"
     />
   </head>
   <body>
     <div id="app"></div>
+
+    <!-- Import for mermaid support -->
     <script src="//cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+
     <script>
       var num = 0;
       mermaid.initialize({ startOnLoad: false });
       window.$docsify = {
-        auto2top: true,
+        hideSidebar: false, // Configurable when publishing
+        basePath: "/", // Configurable when publishing
+        homepage: "README.md", // Configurable when publishing
+        coverpage: false, // Configurable when publishing
+        onlyCover: false, // Configurable when publishing
         el: "#app",
+        auto2top: true,
         loadSidebar: true,
         subMaxLevel: 2, // For automatic 2nd level headings
-        search: "auto", // Search pages defined on your sidebar
-        themeColor: "#0c60c7",
-        coverpage: true,
+        themeColor: "#0076d6",
+        search: "auto", // Enable search based on pages defined on your sidebar
         markdown: {
           renderer: {
             code: function (code, lang) {
@@ -44,8 +52,10 @@
         },
       };
     </script>
-    <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
-    <script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script>
+
+    <!-- Imports for documentation functionality on documentation portal  -->
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>
     <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
   </body>

@@ -104,7 +104,7 @@ Current value: 50/100
 
 ## Markdown Syntax
 
-```markdown
+``````markdown
 # h1 Heading
 
 ## h2 Heading
@@ -184,19 +184,19 @@ Indented code
 
 Block code "fences"
 
-\`\`\`
+```
 Sample text here...
-\`\`\`
+```
 
 Syntax highlighting
 
-\`\`\`js
+```javascript
 var foo = function(bar) {
 return bar++;
 };
 
 console.log(foo(5));
-\`\`\`
+```
 
 ## Tables
 
@@ -234,7 +234,7 @@ Like links, Images also have a footnote style syntax
 With a reference later in the document defining the URL location:
 
 [id]: https://octodex.github.com/images/dojocat.jpg ":size=400 The Dojocat"
-```
+``````
 
 ## Rendered Output
 
@@ -323,9 +323,9 @@ Sample text here...
 
 Syntax highlighting
 
-```js
-var foo = function (bar) {
-  return bar++;
+```javascript
+var foo = function(bar) {
+return bar++;
 };
 
 console.log(foo(5));
