@@ -163,8 +163,11 @@ Ordered
 2. Consectetur adipiscing elit
 3. Integer molestie lorem at massa
 
-1) You can use sequential numbers...
-1) ...or keep all the numbers as `1.`
+It’s important to note that the actual numbers you use to mark the list have no effect on the HTML output Markdown produces.
+
+1. You can use sequential numbers...
+1. ...or...
+1. keep all the numbers as `1.`
 
 Start numbering with offset:
 
@@ -296,8 +299,11 @@ Ordered
 2. Consectetur adipiscing elit
 3. Integer molestie lorem at massa
 
-1) You can use sequential numbers...
-1) ...or keep all the numbers as `1.`
+It’s important to note that the actual numbers you use to mark the list have no effect on the HTML output Markdown produces.
+
+1. You can use sequential numbers...
+1. ...or...
+1. keep all the numbers as `1.`
 
 Start numbering with offset:
 
