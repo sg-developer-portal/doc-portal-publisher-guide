@@ -117,129 +117,7 @@ Current value: 50/100
 
 ###### h6 Heading
 
-## Horizontal Rules
-
----
-
----
-
----
-
-## Emphasis
-
-**This is bold text**
-
-**This is bold text**
-
-_This is italic text_
-
-_This is italic text_
-
-~~Strikethrough~~
-
-## Blockquotes
-
-> Blockquotes can also be nested...
->
-> > ...by using additional greater-than signs right next to each other...
-> >
-> > > ...or with spaces between arrows.
-
-## Lists
-
-Unordered
-
-- Create a list by starting a line with `+`, `-`, or `*`
-- Sub-lists are made by indenting 2 spaces:
-  - Marker character change forces new list start:
-    - Ac tristique libero volutpat at
-    * Facilisis in pretium nisl aliquet
-    - Nulla volutpat aliquam velit
-- Very easy!
-
-Ordered
-
-1. Lorem ipsum dolor sit amet
-2. Consectetur adipiscing elit
-3. Integer molestie lorem at massa
-
-It’s important to note that the actual numbers you use to mark the list have no effect on the HTML output Markdown produces.
-
-1. You can use sequential numbers...
-1. ...or...
-1. keep all the numbers as `1.`
-
-Start numbering with offset:
-
-57. foo
-1. bar
-
-## Code
-
-Inline `code`
-
-Indented code
-
-    // Some comments
-    line 1 of code
-    line 2 of code
-    line 3 of code
-
-Block code "fences"
-
-```
-Sample text here...
-```
-
-Syntax highlighting
-
-```javascript
-var foo = function(bar) {
-return bar++;
-};
-
-console.log(foo(5));
-```
-
-## Tables
-
-| Option | Description                                                               |
-| ------ | ------------------------------------------------------------------------- |
-| data   | path to data files to supply the data that will be passed into templates. |
-| engine | engine to be used for processing templates. Handlebars is the default.    |
-| ext    | extension to be used for dest files.                                      |
-
-Right aligned columns
-
-| Option |                                                               Description |
-| -----: | ------------------------------------------------------------------------: |
-|   data | path to data files to supply the data that will be passed into templates. |
-| engine |    engine to be used for processing templates. Handlebars is the default. |
-|    ext |                                      extension to be used for dest files. |
-
-## Links
-
-[link text](http://dev.nodeca.com)
-
-[link with title](http://nodeca.github.io/pica/demo/ "title text!")
-
-Autoconverted link https://github.com/nodeca/pica (enable linkify to see)
-
-## Images
-
-![Minion](https://octodex.github.com/images/minion.png ":size=250")
-![Stormtroopocat](https://octodex.github.com/images/stormtroopocat.jpg ":size=250 The Stormtroopocat")
-
-Like links, Images also have a footnote style syntax
-
-![Alt text][id]
-
-With a reference later in the document defining the URL location:
-
-[id]: https://octodex.github.com/images/dojocat.jpg ":size=400 The Dojocat"
 ``````
-
-## Rendered Output
 
 # h1 Heading
 
@@ -255,6 +133,15 @@ With a reference later in the document defining the URL location:
 
 ## Horizontal Rules
 
+``````markdown
+
+---
+
+---
+
+---
+``````
+
 ---
 
 ---
@@ -262,6 +149,18 @@ With a reference later in the document defining the URL location:
 ---
 
 ## Emphasis
+``````markdown
+
+**This is bold text**
+
+**This is bold text**
+
+_This is italic text_
+
+_This is italic text_
+
+~~Strikethrough~~
+``````
 
 **This is bold text**
 
@@ -273,7 +172,15 @@ _This is italic text_
 
 ~~Strikethrough~~
 
+
 ## Blockquotes
+``````markdown
+> Blockquotes can also be nested...
+>
+> > ...by using additional greater-than signs right next to each other...
+> >
+> > > ...or with spaces between arrows.
+``````
 
 > Blockquotes can also be nested...
 >
@@ -281,9 +188,20 @@ _This is italic text_
 > >
 > > > ...or with spaces between arrows.
 
+
 ## Lists
 
 Unordered
+
+``````markdown
+- Create a list by starting a line with `+`, `-`, or `*`
+- Sub-lists are made by indenting 2 spaces:
+  - Marker character change forces new list start:
+    - Ac tristique libero volutpat at
+    * Facilisis in pretium nisl aliquet
+    - Nulla volutpat aliquam velit
+- Very easy!
+``````
 
 - Create a list by starting a line with `+`, `-`, or `*`
 - Sub-lists are made by indenting 2 spaces:
@@ -294,6 +212,22 @@ Unordered
 - Very easy!
 
 Ordered
+``````markdown
+1. Lorem ipsum dolor sit amet
+2. Consectetur adipiscing elit
+3. Integer molestie lorem at massa
+
+It’s important to note that the actual numbers you use to mark the list have no effect on the HTML output Markdown produces.
+
+1. You can use sequential numbers...
+1. ...or...
+1. keep all the numbers as `1.`
+
+Start numbering with offset:
+
+57. foo
+1. bar
+``````
 
 1. Lorem ipsum dolor sit amet
 2. Consectetur adipiscing elit
@@ -312,22 +246,48 @@ Start numbering with offset:
 
 ## Code
 
+``````markdown
 Inline `code`
+``````
+Inline `code`
+
 
 Indented code
 
+``````markdown
     // Some comments
     line 1 of code
     line 2 of code
     line 3 of code
-
+``````
+    // Some comments
+    line 1 of code
+    line 2 of code
+    line 3 of code
+    
+    
 Block code "fences"
+``````markdown
+```
+Sample text here...
+```
+``````
 
 ```
 Sample text here...
 ```
 
+
 Syntax highlighting
+``````markdown
+```javascript
+var foo = function(bar) {
+return bar++;
+};
+
+console.log(foo(5));
+```
+``````
 
 ```javascript
 var foo = function(bar) {
@@ -337,7 +297,24 @@ return bar++;
 console.log(foo(5));
 ```
 
+
 ## Tables
+
+``````markdown
+| Option | Description                                                               |
+| ------ | ------------------------------------------------------------------------- |
+| data   | path to data files to supply the data that will be passed into templates. |
+| engine | engine to be used for processing templates. Handlebars is the default.    |
+| ext    | extension to be used for dest files.                                      |
+
+Right aligned columns
+
+| Option |                                                               Description |
+| -----: | ------------------------------------------------------------------------: |
+|   data | path to data files to supply the data that will be passed into templates. |
+| engine |    engine to be used for processing templates. Handlebars is the default. |
+|    ext |                                      extension to be used for dest files. |
+``````
 
 | Option | Description                                                               |
 | ------ | ------------------------------------------------------------------------- |
@@ -355,6 +332,14 @@ Right aligned columns
 
 ## Links
 
+``````markdown
+[link text](http://dev.nodeca.com)
+
+[link with title](http://nodeca.github.io/pica/demo/ "title text!")
+
+Autoconverted link https://github.com/nodeca/pica (enable linkify to see)
+``````
+
 [link text](http://dev.nodeca.com)
 
 [link with title](http://nodeca.github.io/pica/demo/ "title text!")
@@ -362,6 +347,8 @@ Right aligned columns
 Autoconverted link https://github.com/nodeca/pica (enable linkify to see)
 
 ## Images
+
+``````markdown
 
 ![Minion](https://octodex.github.com/images/minion.png ":size=250")
 ![Stormtroopocat](https://octodex.github.com/images/stormtroopocat.jpg ":size=250 The Stormtroopocat")
@@ -373,3 +360,15 @@ Like links, Images also have a footnote style syntax
 With a reference later in the document defining the URL location:
 
 [id]: https://octodex.github.com/images/dojocat.jpg ":size=400 The Dojocat"
+``````
+![Minion](https://octodex.github.com/images/minion.png ":size=250")
+![Stormtroopocat](https://octodex.github.com/images/stormtroopocat.jpg ":size=250 The Stormtroopocat")
+
+Like links, Images also have a footnote style syntax
+
+![Alt text][id]
+
+With a reference later in the document defining the URL location:
+
+[id]: https://octodex.github.com/images/dojocat.jpg ":size=400 The Dojocat"
+
