@@ -58,6 +58,12 @@ You can specify certain configurations that would be present on the`window.$docs
 
 This takes the value set for your documentation's display name
 
+### hideSidebar
+
+Enable this to completely hide your sidebar.
+
+Defaults to `false`.
+
 ### basePath
 
 If you want to have your markdown files or other assets reside in an inner directory of your git repo, e.g. docs/
