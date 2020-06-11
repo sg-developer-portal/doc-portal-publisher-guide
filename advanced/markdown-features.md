@@ -246,39 +246,32 @@ Start numbering with offset:
 
 ## Code
 
-``````markdown
-Inline `code`
-``````
-Inline `code`
+Use the back tick character (`) to display code.
 
-
-Indented code
+### Inline code
 
 ``````markdown
-    // Some comments
-    line 1 of code
-    line 2 of code
-    line 3 of code
+The follow text is `inline code`.
 ``````
-    // Some comments
-    line 1 of code
-    line 2 of code
-    line 3 of code
-    
-    
-Block code "fences"
+The follow text is `inline code`.
+
+### Block code "fences"
+
 ``````markdown
 ```
-Sample text here...
+No language indicated, so no syntax highlighting in Markdown Here. 
+But let's throw in a <b>tag</b>.
 ```
 ``````
 
 ```
-Sample text here...
+No language indicated, so no syntax highlighting in Markdown Here. 
+But let's throw in a <b>tag</b>.
 ```
 
 
-Syntax highlighting
+### Syntax highlighting
+
 ``````markdown
 ```javascript
 var foo = function(bar) {
@@ -297,6 +290,30 @@ return bar++;
 console.log(foo(5));
 ```
 
+``````markdown
+```python
+s = "Python syntax highlighting"
+print s
+```
+``````
+
+```python
+s = "Python syntax highlighting"
+print s
+```
+
+### Indented code
+
+``````markdown
+    // Some comments
+    line 1 of code
+    line 2 of code
+    line 3 of code
+``````
+    // Some comments
+    line 1 of code
+    line 2 of code
+    line 3 of code
 
 ## Tables
 
