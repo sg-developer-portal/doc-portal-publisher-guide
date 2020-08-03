@@ -119,9 +119,9 @@ Current value: 50/100
 
 ``````
 
-# h1 Heading
+# h1 Heading {docsify-ignore}
 
-## h2 Heading
+## h2 Heading {docsify-ignore}
 
 ### h3 Heading
 
