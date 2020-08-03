@@ -1,18 +1,21 @@
-# Get started
+# Overview
 
-## Overview
+![Get Started Overview](assets/get-started-overview.png ":size=300%")
 
+## Prerequisites
 The documentation portal syncs up your documentation repository containing Markdown or OpenAPI(Swagger) files and hosts them as documentation pages.
 
-You will need a [TechPass](https://www.techpass.gov.sg) account to log in and host your documentation, as well as a free [github.com](https://github.com) to host your documentation's git repository.
+You will need
+1. A [TechPass](https://www.techpass.gov.sg) account to log in and host your documentation.
+2. A free [github.com](https://github.com) account to host your documentation's git repository.
 
 If your documentation is in Markdown, you will need [Docsify](https://docsify.js.org) to write and structure it on your development machine before pushing it to your GitHub repository.
 
 If your documentation is in OpenAPI/Swagger, i.e. you are writing API documentation, you will need [ReDoc](https://github.com/Redocly/redoc) to view it on your development machine before pushing your `swagger.json` file to your GitHub repository.
 
-## Quickstart with Docsify
+## Starting with a new repo
 
-### 1. Sign in with TechPass
+## Starting with an existing repo
 
 [Acquire your TechPass account](https://dev.docs.developer.gov.sg/docs/public/244557586/techpass-user-docs/ ':target=_blank') and sign in using the "Log in with TechPass" button on the top nav bar.
 
@@ -75,7 +78,7 @@ The easiest way to get started with Docsify is through its [command line tool](h
 
 ### 4. Publish your documentation on Documentation Portal
 
-> Make sure you have **pushed** changes made to your documentation files to the master branch on GitHub! 
+> Make sure you have **pushed** changes made to your documentation files to the master branch on GitHub!
 
 Once your GitHub repository is linked to the documentation portal, you will be able to publish it from the documentation portal.
 

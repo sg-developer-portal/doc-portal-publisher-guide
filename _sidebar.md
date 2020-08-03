@@ -1,8 +1,7 @@
 * [Overview](/)
 * [Get started](get-started)
-* [Docsify configuration](docsify-configuration)
-* [Writing documentation](writing-documentation)
-* Advanced
+* [Docsify](docsify)
+* [Advanced](advanced/mermaid)
   * [Diagrams with Mermaid](advanced/mermaid)
   * [Markdown features](advanced/markdown-features)
   * [Teams and permissions](advanced/teams-and-permissions)
