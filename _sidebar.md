@@ -1,4 +1,4 @@
-* [Home](/)
+* [Overview](/)
 * [Get started](get-started)
 * [Docsify configuration](docsify-configuration)
 * [Writing documentation](writing-documentation)
