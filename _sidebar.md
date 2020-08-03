@@ -1,10 +1,10 @@
 * [Overview](/)
 * [Get started](get-started)
 * [Docsify](docsify)
-* [Advanced features](advanced)
+* Advanced features
   * [Diagrams with Mermaid](advanced/mermaid)
   * [Markdown features](advanced/markdown-features)
-* [Collaboration](collaboration)
+* Collaboration
   * [Teams and permissions](collaboration/teams-and-permissions)
   * [Collaborative publishing](collaboration/collaborative-publishing)
 * [Showcase](showcase)
