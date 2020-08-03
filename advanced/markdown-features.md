@@ -259,13 +259,13 @@ The follow text is `inline code`.
 
 ``````markdown
 ```
-No language indicated, so no syntax highlighting in Markdown Here. 
+No language indicated, so no syntax highlighting in Markdown Here.
 But let's throw in a <b>tag</b>.
 ```
 ``````
 
 ```
-No language indicated, so no syntax highlighting in Markdown Here. 
+No language indicated, so no syntax highlighting in Markdown Here.
 But let's throw in a <b>tag</b>.
 ```
 
@@ -388,4 +388,3 @@ Like links, Images also have a footnote style syntax
 With a reference later in the document defining the URL location:
 
 [id]: https://octodex.github.com/images/dojocat.jpg ":size=400 The Dojocat"
-
