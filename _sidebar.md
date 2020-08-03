@@ -7,4 +7,4 @@
   * [Teams and permissions](advanced/teams-and-permissions)
   * [Collaborative publishing](advanced/collaborative-publishing)
   * [How Documentation Portal works](advanced/how-documentation-portal-works)
-  * [Showcase](advanced/showcase)
+* [Showcase](showcase)
