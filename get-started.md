@@ -1,6 +1,6 @@
 # Overview
 
-![Get Started Overview](assets/get-started-overview.png ":size=300%")
+![Get Started Overview](assets/get-started-overview.png)
 
 ## Prerequisites
 The documentation portal syncs up your documentation repository containing Markdown or OpenAPI(Swagger) files and hosts them as documentation pages.
