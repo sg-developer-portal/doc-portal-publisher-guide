@@ -1,22 +1,22 @@
-# Documentation portal publisher guide
+# What is this documentation portal about? {docsify-ignore-all}
 
-## What is the documentation portal?
+With this portal, developers like you can write project documentation with markdown files, in your own git repositories. They are then automatically synced and published to the documentation portal.
 
-Developers can now write their project documentation with markdown files in their own git repositories, which are **automatically synced and published** to the documentation portal.
+## Why do I have to write technical documentation?
 
-## Why write technical documentation?
+Technical documentation helps other users to understand your software. Hence, your software that is meant to be reused needs proper documentation.
 
-Every piece of software that is meant to be reused needs proper user-facing documentation. [Read more about writing documentation](advanced/writing-documentation).
+## Public and private documentation
 
-### Public and private documentation
+Users have the choice to decide whether they want to publish their own documentation on the public-facing or private site (which requires a Techpass login to access).
 
-Users can choose whether their documentation sites are public-facing or behind a TechPass login.
-
-### Start writing documentation
+### Start writing your own documentation
 
 The Documentation Portal supports two documentation formats:
 
-- Markdown, rendered through [Docsify](https://docsify.js.org)
+- Markdown, rendered in [Docsify](https://docsify.js.org)
 - OpenAPI (also known as Swagger) definitions in JSON or YAML, rendered through [ReDoc](https://github.com/redocly/redoc)
 
-You will need a [TechPass](https://portal.techpass.gov.sg) and free [github.com](https://www.github.com) account. [Get started here](get-started).
+You will need a TechPass and Github account. [Get started](get-started) today!
+
+<!-- You will need a [TechPass](https://portal.techpass.gov.sg) and free [github.com](https://www.github.com) account. [Get started here](get-started). -->

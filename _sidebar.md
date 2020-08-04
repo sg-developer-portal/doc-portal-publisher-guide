@@ -1,11 +1,10 @@
-* [Home](/)
+* [Overview](/)
 * [Get started](get-started)
-* [Docsify configuration](docsify-configuration)
-* [Writing documentation](writing-documentation)
-* Advanced
+* [Docsify](docsify)
+* Advanced features
   * [Diagrams with Mermaid](advanced/mermaid)
   * [Markdown features](advanced/markdown-features)
-  * [Teams and permissions](advanced/teams-and-permissions)
-  * [Collaborative publishing](advanced/collaborative-publishing)
-  * [How Documentation Portal works](advanced/how-documentation-portal-works)
-  * [Showcase](advanced/showcase)
+* Collaboration
+  * [Teams and permissions](collaboration/teams-and-permissions)
+  * [Collaborative publishing](collaboration/collaborative-publishing)
+* [Showcase](showcase)

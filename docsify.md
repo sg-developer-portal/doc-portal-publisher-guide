@@ -1,13 +1,34 @@
-# Docsify configuration
+## Quickstart
+
+### 1. Sign in with TechPass {docsify-ignore}
+
+  Acquire your TechPass account and sign in using the "Log in with TechPass"
+button on the top nav bar.
+
+### 2. Link your account to your github.com account {docsify-ignore}
+
+  Once signed in, go to your account page and click on the "authorize to GitHub"
+link. You will be directed to your GitHub account and you will have to grant
+OAuth permissions for the documentation portal to pull your documentation repository and host it.
+
+### 3. Create your Docsify project {docsify-ignore}
+
+  The easiest way to get started with Docsify is through its command line tool.
+
+  You will need to have Node.js and NPM installed on your machine. Use the official installer or the nvm tool.
+
+  Create a Git repository to hold your documentation.
+
+## Basic configuration
 
 Documentation portal uses a set of default Docsify settings and styles to render your documentation.
 It does not read from your repository's `index.html` file.
-Some of these settings are configurable [from the portal](#manually-configurable-docsify-settings).
+Some of these settings are configurable [from the portal](#manual-configuration).
 
 To see exactly how your own documentation pages would look like on Documentation
 Portal, use the following `window.$docsify` settings in your index.html file.
-To understand the items that are `configurable when publishing`, see 
-[below](#manually-configurable-docsify-settings).
+To understand the items that are `configurable when publishing`, see
+[below](#manual-configuration).
 
 ```html
 <!DOCTYPE html>
@@ -48,41 +69,41 @@ To understand the items that are `configurable when publishing`, see
 </html>
 ```
 
-## Manually configurable Docsify settings
+## Manual configuration
 
-![Docsify settings](assets/docsify_settings.png ":size=300%")
+![Docsify settings](assets/docsify_settings.png ":size=50%")
 
 You can specify certain configurations that would be present on the`window.$docsify` object when publishing.
 
-### name
+### name {docsify-ignore}
 
 This takes the value set for your documentation's display name
 
-### hideSidebar
+### hideSidebar {docsify-ignore}
 
 Enable this to completely hide your sidebar.
 
 Defaults to `false`.
 
-### basePath
+### basePath {docsify-ignore}
 
 If you want to have your markdown files or other assets reside in an inner directory of your git repo, e.g. docs/
 
 Defaults to empty string (`''`)
 
-### homepage
+### homepage {docsify-ignore}
 
 File name for your home page.
 
 Defaults to `README.md`
 
-### coverpage
+### coverpage {docsify-ignore}
 
 Enable this to render a cover page.
 
 Defaults to `false`.
 
-### onlyCover
+### onlyCover {docsify-ignore}
 
 Enable this to only present the cover page as your home page.
 

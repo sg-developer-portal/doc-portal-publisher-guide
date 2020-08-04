@@ -1,11 +1,11 @@
-## Working in teams
+# Working in teams
 
-> GitHub private repositories for personal and team accounts are [free of charge](https://github.com/pricing). 
+> GitHub private repositories for personal and team accounts are [free of charge](https://github.com/pricing).
 
 If your documentation is maintained by a team, you can either:
 
 - Use a personal account and invite individual collaborators
-  
+
   This allows you to work on public and private repositories. However, only the *owner* of the GitHub repository will be able to publish
   or unpublish documentation on the Documentation Portal.
 
@@ -20,5 +20,5 @@ If your documentation is maintained by a team, you can either:
 
   ![GitHub organization repository access management screenshot](../assets/github_org_repo_access.png)
 
-  > For your convenience, you can use the [Documentation Portal's GitHub organisation](https://github.com/Documentation-Portal) to host your documentation repositories. 
+  > For your convenience, you can use the [Documentation Portal's GitHub organisation](https://github.com/Documentation-Portal) to host your documentation repositories.
   > Contact gds_developer_portal@tech.gov.sg to find out more.
