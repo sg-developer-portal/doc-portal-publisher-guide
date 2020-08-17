@@ -1,6 +1,6 @@
 # Overview
 
-![Get Started Overview](/assets/get-started-overview.png)
+![Get Started Overview](assets/get-started-overview.png)
 
 ## Prerequisites
 The documentation portal syncs up your documentation repository containing Markdown or OpenAPI(Swagger) files and hosts them as documentation pages.
@@ -13,17 +13,9 @@ If your documentation is in Markdown, you will need [Docsify](https://docsify.js
 
 If your documentation is in OpenAPI/Swagger, i.e. you are writing API documentation, you will need [ReDoc](https://github.com/Redocly/redoc) to view it on your development machine before pushing your `swagger.json` file to your GitHub repository.
 
-## Starting with a new repo
+## Starting with a new repo on GitHub
 
-## Starting with an existing repo
-
-[Acquire your TechPass account](https://dev.docs.developer.gov.sg/docs/public/244557586/techpass-user-docs/ ':target=_blank') and sign in using the "Log in with TechPass" button on the top nav bar.
-
-### 2. Link your account to your github.com account {docsify-ignore}
-
-Once signed in, go to your `account` page and click on the "authorize to GitHub" link. You will be directed to your GitHub account and you will have to grant OAuth permissions for the documentation portal to pull your documentation repository and host it.
-
-### 3. Create your Docsify project {docsify-ignore}
+### 1. Create your Docsify project
 
 The easiest way to get started with Docsify is through its [command line tool](https://docsify.js.org/#/quickstart).
 
@@ -76,15 +68,19 @@ The easiest way to get started with Docsify is through its [command line tool](h
 
    Note that you should have at least a `README.md` file at the **root** of your project, which will serve as the home page for your documentation.
 
-### 4. Publish your documentation on Documentation Portal {docsify-ignore}
+### 2. Log in and link your TechPass account to your GitHub account
+
+Log in to documentation portal by clicking on `Log in with TechPass`. Navigate to `Browse Docs` > `My Docs` and click on the "authorize to GitHub" link. You will be directed to your GitHub account and you will have to grant OAuth permissions for the documentation portal to pull your documentation repository and host it.
+
+### 3. Publish your documentation on Documentation Portal
 
 > Make sure you have **pushed** changes made to your documentation files to the master branch on GitHub!
 
 Once your GitHub repository is linked to the documentation portal, you will be able to publish it from the documentation portal.
 
-Go to your `account` page, find the GitHub repository holding your documentation and click "Publish".
+From the top navigation bar, go to `Browse Docs` > `My Docs`. You should see the your personal or organisational GitHub accounts that Documentation Portal is connected with. Find the GitHub repository containing your documentation and click "Publish".
 
-![Account page screenshot](assets/account_screen.png ":size=450 :class=bordered-black")
+![My Docs page screenshot](assets/my_docs_list_screen.png)
 
 In the publish menu:
 
@@ -93,7 +89,7 @@ In the publish menu:
 3. Fill in the display name for your documentation page.
 4. Click "Publish this project".
 
-![Publish settings screenshot](assets/publish_settings.png ":size=300 :class=bordered-black")
+![My Docs publish screenshot](assets/my_docs_publish_screen.png)
 
 Once published, your documentation will be hosted at docs.developer.gov.sg. All changes made to your GitHub repository would be automatically
 synced to the documentation portal.
@@ -101,7 +97,8 @@ synced to the documentation portal.
 > When published, every push to your documentation files on the `master` branch will be automatically pulled and served by the documentation portal.
 
 > If you publish a project in `public` mode, it will be publicly accessible from the internet.
-> If you choose `private` mode,
-> only users logged in to Documentation Portal through TechPass will be able to see it.
+> If you choose `private` mode, only users logged in to Documentation Portal through TechPass will be able to see it. You can also set specific access controls via email domains or specific emails.
+> You can also specify the category that your documentation belongs to.
+> For a complete description of publishing settings, see [advanced settings](advanced/publish-settings).
 
 ?> For more information, see [how documentation portal works](advanced/how-documentation-portal-works).

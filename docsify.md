@@ -1,17 +1,17 @@
 ## Quickstart
 
-### 1. Sign in with TechPass {docsify-ignore}
+### 1. Sign in with TechPass
 
   Acquire your TechPass account and sign in using the "Log in with TechPass"
 button on the top nav bar.
 
-### 2. Link your account to your github.com account {docsify-ignore}
+### 2. Link your account to your github.com account
 
   Once signed in, go to your account page and click on the "authorize to GitHub"
 link. You will be directed to your GitHub account and you will have to grant
 OAuth permissions for the documentation portal to pull your documentation repository and host it.
 
-### 3. Create your Docsify project {docsify-ignore}
+### 3. Create your Docsify project
 
   The easiest way to get started with Docsify is through its command line tool.
 
@@ -75,35 +75,35 @@ To understand the items that are `configurable when publishing`, see
 
 You can specify certain configurations that would be present on the`window.$docsify` object when publishing.
 
-### name {docsify-ignore}
+### name
 
 This takes the value set for your documentation's display name
 
-### hideSidebar {docsify-ignore}
+### hideSidebar
 
 Enable this to completely hide your sidebar.
 
 Defaults to `false`.
 
-### basePath {docsify-ignore}
+### basePath
 
 If you want to have your markdown files or other assets reside in an inner directory of your git repo, e.g. docs/
 
 Defaults to empty string (`''`)
 
-### homepage {docsify-ignore}
+### homepage
 
 File name for your home page.
 
 Defaults to `README.md`
 
-### coverpage {docsify-ignore}
+### coverpage
 
 Enable this to render a cover page.
 
 Defaults to `false`.
 
-### onlyCover {docsify-ignore}
+### onlyCover
 
 Enable this to only present the cover page as your home page.
 

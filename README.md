@@ -1,4 +1,4 @@
-# What is this documentation portal about? {docsify-ignore-all}
+# What is this documentation portal for?
 
 With this portal, developers like you can write project documentation with markdown files, in your own git repositories. They are then automatically synced and published to the documentation portal.
 
