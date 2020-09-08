@@ -34,6 +34,14 @@ To understand the items that are `configurable when publishing`, see
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8">
+    <title>My New Documentation</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <!-- Configurable when publishing; useful for search engine optimization -->
+    <meta name="description" content="My Documentation Description">
+
     <!-- Import for documentation portal styles -->
     <link
       rel="stylesheet"
@@ -49,22 +57,20 @@ To understand the items that are `configurable when publishing`, see
         hideSidebar: false, // Configurable when publishing
         basePath: "", // Configurable when publishing
         homepage: "README.md", // Configurable when publishing
-        coverpage: false, // Configurable when publishing
-        onlyCover: false, // Configurable when publishing
         el: "#app",
         auto2top: true,
         loadSidebar: true,
         subMaxLevel: 2, // For automatic 2nd level headings
-        themeColor: "#0076d6",
-        search: "auto", // Enable search based on pages defined on your sidebar
+        themeColor: "#0076d6"
       };
     </script>
 
     <!-- Imports for documentation functionality on documentation portal  -->
     <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>
     <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify-tabs/dist/docsify-tabs.min.js"></script>
   </body>
 </html>
 ```
