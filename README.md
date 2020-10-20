@@ -4,7 +4,7 @@ With this portal, developers like you can write project documentation with markd
 
 ## Why do I have to write technical documentation?
 
-Technical documentation helps other users to understand your software. Hence, your software that is meant to be reused needs proper documentation.
+Technical documentation is crucial for your users to understand and use your software and its APIs. In addition, [the user satisfaction of a system is strongly influenced by its documentation](https://www.sciencedirect.com/science/article/abs/pii/037872069090063N).
 
 ## Public and private documentation
 
