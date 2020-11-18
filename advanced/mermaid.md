@@ -1,4 +1,4 @@
-# [Mermaid](https://mermaid-js.github.io/mermaid) diagrams
+## Enabling Mermaid
 
 Mermaid is a tool that enables you to write diagrams and flowcharts using Markdown. It
 is supported out of the box on Documentation Portal.
@@ -14,13 +14,15 @@ configuration in your `index.html` file as shown below:
 ```html
 <body>
 
-  <!-- Import mermaid.js, BEFORE the window.$docsify initialisation -->
+  <!-- 1. Import mermaid.js, BEFORE the window.$docsify initialisation -->
   <script src="//cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+  
   <script>
-    // Add the two lines below
+    // 2. Add the two lines below before declaring the window.$docsify object:
     var num = 0;
     mermaid.initialize({ startOnLoad: false });
-    // Add the "markdown" option to window.$docsify in addition to the other config
+
+    // 3. Add the "markdown" option to window.$docsify in addition to the other config
     window.$docsify = {
       ...otherDocsifyConfig,
       markdown: {
@@ -43,7 +45,7 @@ configuration in your `index.html` file as shown below:
 </body>
 ```
 
-## Writing Mermaid diagrams
+## Writing diagrams
 
 To write a Mermaid diagram, simply use a code block with the language type set to `mermaid`:
 

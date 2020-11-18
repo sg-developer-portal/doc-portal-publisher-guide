@@ -18,7 +18,14 @@
   <body>
     <div id="app"></div>
 
+    <!-- 1. Import mermaid.js, BEFORE the window.$docsify initialisation -->
+    <script src="//cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+
     <script>
+      // 2. Add the two lines below before declaring the window.$docsify object:
+      var num = 0;
+      mermaid.initialize({ startOnLoad: false });
+
       window.$docsify = {
         name: "My Documentation", // Must configure when publishing
         hideSidebar: false, // Configurable when publishing
@@ -28,7 +35,21 @@
         auto2top: true,
         loadSidebar: true,
         subMaxLevel: 2, // For automatic 2nd level headings
-        themeColor: "#0076d6"
+        themeColor: "#0076d6",
+        markdown: {
+          renderer: {
+            code: function (code, lang) {
+              if (lang === "mermaid") {
+                return (
+                  '<div class="mermaid">' +
+                  mermaid.render("mermaid-svg-" + num++, code) +
+                  "</div>"
+                );
+              }
+              return this.origin.code.apply(this, arguments);
+            },
+          },
+        },
       };
     </script>
 

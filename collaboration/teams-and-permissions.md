@@ -1,4 +1,4 @@
-# Working in teams
+## Working in teams
 
 > GitHub private repositories for personal and team accounts are [free of charge](https://github.com/pricing).
 
@@ -6,7 +6,7 @@ If your documentation is maintained by a team, you can either:
 
 - Use a personal account and invite individual collaborators
 
-  This allows you to work on public and private repositories. However, only the *owner* of the GitHub repository will be able to publish
+  This allows you to work on public and private repositories. However, only the _owner_ of the GitHub repository will be able to publish
   or unpublish documentation on the Documentation Portal.
 
 - Use teams in a GitHub organisation account
@@ -22,3 +22,13 @@ If your documentation is maintained by a team, you can either:
 
   > For your convenience, you can use the [Documentation Portal's GitHub organisation](https://github.com/Documentation-Portal) to host your documentation repositories.
   > Contact gds_developer_portal@tech.gov.sg to find out more.
+
+## Configuring permissions for readers
+
+If you publish a project in `public` mode, it will be publicly accessible from the internet.
+
+If you choose `private` mode, only users logged in to Documentation Portal through TechPass will be able to see it. 
+
+In private mode, you can also set specific access controls via email domains or specific emails. For example, access granted for `tech.gov.sg` and `john@example.gov.sg` allows all users with a tech.gov.sg email as well as the user whose email is john@example.gov.sg to read your published documentation.
+
+You can also specify the category that your documentation belongs to. For a complete description of publishing settings, see [advanced settings](advanced/publish-settings).

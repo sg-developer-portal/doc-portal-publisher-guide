@@ -1,25 +1,4 @@
-## Quickstart
-
-### 1. Sign in with TechPass
-
-  Acquire your TechPass account and sign in using the "Log in with TechPass"
-button on the top nav bar.
-
-### 2. Link your account to your github.com account
-
-  Once signed in, go to your account page and click on the "authorize to GitHub"
-link. You will be directed to your GitHub account and you will have to grant
-OAuth permissions for the documentation portal to pull your documentation repository and host it.
-
-### 3. Create your Docsify project
-
-  The easiest way to get started with Docsify is through its command line tool.
-
-  You will need to have Node.js and NPM installed on your machine. Use the official installer or the nvm tool.
-
-  Create a Git repository to hold your documentation.
-
-## Basic configuration
+## Default configuration
 
 Documentation portal uses a set of default Docsify settings and styles to render your documentation.
 It does not read from your repository's `index.html` file.
@@ -55,6 +34,7 @@ To understand the items that are `configurable when publishing`, see
       window.$docsify = {
         name: "My Documentation", // Must configure when publishing
         hideSidebar: false, // Configurable when publishing
+        subMaxLevel: 2, // Configurable when publishing
         basePath: "", // Configurable when publishing
         homepage: "README.md", // Configurable when publishing
         el: "#app",
@@ -77,13 +57,13 @@ To understand the items that are `configurable when publishing`, see
 
 ## Manual configuration
 
-![Docsify settings](assets/docsify_settings.png ":size=50%")
+![Docsify settings](assets/publish_settings_docsify.png ":size=75%")
 
 You can specify certain configurations that would be present on the`window.$docsify` object when publishing.
 
-### name
+### Documentation display name
 
-This takes the value set for your documentation's display name
+This takes the value set for your documentation's display name, which would show up in places such as links to your documentation, the sidebar and the title of the HTML document seen by readers.
 
 ### hideSidebar
 
@@ -93,24 +73,12 @@ Defaults to `false`.
 
 ### basePath
 
-If you want to have your markdown files or other assets reside in an inner directory of your git repo, e.g. docs/
+If have your markdown files or other assets reside in an inner directory of your git repo, set this to the name of that directory.
 
-Defaults to empty string (`''`)
+Defaults to empty string (`''`), which results in the root folder of your repository being served.
 
 ### homepage
 
-File name for your home page.
+File name for your home page, which is the page that gets served when readers navigate to your doc, e.g. `readme.md`, `README.md`, `home.md`.
 
 Defaults to `README.md`
-
-### coverpage
-
-Enable this to render a cover page.
-
-Defaults to `false`.
-
-### onlyCover
-
-Enable this to only present the cover page as your home page.
-
-Defaults to `false`.

@@ -1,6 +1,6 @@
 * [Overview](/)
 * [Get started](get-started)
-* [Docsify](docsify)
+* [Docsify configuration](docsify)
 * Advanced features
   * [Diagrams with Mermaid](advanced/mermaid)
   * [Markdown features](advanced/markdown-features)
