@@ -1,6 +1,6 @@
 ## Default configuration
 
-Documentation portal uses a set of default Docsify settings and styles to render your documentation.
+Developer documentation portal uses a set of default Docsify settings and styles to render your documentation.
 It does not read from your repository's `index.html` file.
 Some of these settings are configurable [from the portal](#manual-configuration).
 
@@ -21,7 +21,7 @@ To understand the items that are `configurable when publishing`, see
     <!-- Configurable when publishing; useful for search engine optimization -->
     <meta name="description" content="My Documentation Description">
 
-    <!-- Import for documentation portal styles -->
+    <!-- Import for developer documentation portal styles -->
     <link
       rel="stylesheet"
       href="//cdn.jsdelivr.net/npm/@docs-gov-sg/doc-theme-default/public/dist/doc.css"
@@ -45,7 +45,7 @@ To understand the items that are `configurable when publishing`, see
       };
     </script>
 
-    <!-- Imports for documentation functionality on documentation portal  -->
+    <!-- Imports for documentation functionality on developer documentation portal  -->
     <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>
     <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>

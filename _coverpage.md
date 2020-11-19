@@ -1,4 +1,4 @@
-# Documentation Portal Publisher Guide
+# Developer Documentation Portal Publisher Guide
 
 > Write and publish technical documentation
 

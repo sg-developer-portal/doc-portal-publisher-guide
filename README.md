@@ -14,7 +14,7 @@ You have the choice in deciding who can access your documentation: the public, l
 
 ### Start writing your own documentation
 
-The Documentation Portal supports two documentation formats:
+The developer documentation portal supports two documentation formats:
 
 - Markdown, rendered with the [Docsify](https://docsify.js.org) site renderer.
 - OpenAPI (also known as Swagger) definitions in JSON or YAML, rendered through the [ReDoc](https://github.com/redocly/redoc) API documentation renderer.

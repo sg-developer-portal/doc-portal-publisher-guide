@@ -4,7 +4,7 @@
 
 ## Prerequisites
 
-The documentation portal syncs up your documentation repository containing Markdown or OpenAPI(Swagger) files and hosts them as documentation pages.
+The developer documentation portal syncs up your documentation repository containing Markdown or OpenAPI(Swagger) files and hosts them as documentation pages.
 
 You will need:
 
@@ -19,9 +19,9 @@ If your documentation is in OpenAPI/Swagger, i.e. you are writing API documentat
 
 1. Create a new GitHub repository to place your documentation
 2. Push your documentation files to that repository
-3. Log in to the Developer Documentation Portal with your TechPass account
-4. Authorise Developer Documentation Portal to access your GitHub repository's contents
-5. Select the repository containing your documentation and publish it on the Developer Documentation Portal.
+3. Log in to the developer documentation portal with your TechPass account
+4. Authorise developer documentation portal to access your GitHub repository's contents
+5. Select the repository containing your documentation and publish it on the developer documentation portal.
 
 ## Quickstart (markdown)
 
@@ -83,13 +83,13 @@ The easiest way to get started with Docsify is through its [command line tool](h
 
 Log in to the developer documentation portal by clicking on `Log in with TechPass`. Navigate to `Browse Docs` > `My Docs` and click on the "authorize to GitHub" link. You will be directed to your GitHub account and you will have to grant OAuth permissions for the documentation portal to pull the contents of your documentation repository and host it.
 
-### 3. Publish your documentation on Documentation Portal
+### 3. Publish your documentation on developer documentation portal
 
 > Make sure you have **pushed** changes made to your documentation files to the master branch on GitHub!
 
 Once your GitHub repository is linked to the documentation portal, you will be able to publish it from the documentation portal.
 
-From the top navigation bar, go to `Browse Docs` > `My Docs`. You should see the your personal or organisational GitHub accounts that Documentation Portal is connected with. Find the GitHub repository containing your documentation and click "Publish".
+From the top navigation bar, go to `Browse Docs` > `My Docs`. You should see the your personal or organisational GitHub accounts that developer documentation portal is connected with. Find the GitHub repository containing your documentation and click "Publish".
 
 ![My Docs page screenshot](assets/my_docs_list_screen.png)
 
@@ -115,7 +115,7 @@ From the [official OpenAPI specification site](https://swagger.io/specification)
 >
 > An OpenAPI document (or set of documents) defines or describes an API. An OpenAPI definition uses and conforms to the OpenAPI Specification.
 
-You can defined an OpenAPI or Swagger document in `yaml` or `json` and publish that on the Developer Documentation Portal. It would be rendered as a human-readable page with [ReDoc](https://github.com/Redocly/redoc).
+You can defined an OpenAPI or Swagger document in `yaml` or `json` and publish that on the developer documentation portal. It would be rendered as a human-readable page using the [ReDoc](https://github.com/Redocly/redoc) engine.
 
 ### 1. Create a git repo
 
@@ -143,7 +143,7 @@ Log in to the developer documentation portal by clicking on `Log in with TechPas
 
 ### 5. Publish your API documentation
 
-From the top navigation bar, go to `Browse Docs` > `My Docs`. You should see the your personal or organisational GitHub accounts that Documentation Portal is connected with. Find the GitHub repository containing your documentation and click "Publish".
+From the top navigation bar, go to `Browse Docs` > `My Docs`. You should see the your personal or organisational GitHub accounts that documentation portal is connected with. Find the GitHub repository containing your documentation and click "Publish".
 
 ![My Docs page screenshot](assets/my_docs_list_screen.png)
 

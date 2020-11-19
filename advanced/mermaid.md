@@ -1,7 +1,7 @@
 ## Enabling Mermaid
 
 Mermaid is a tool that enables you to write diagrams and flowcharts using Markdown. It
-is supported out of the box on Documentation Portal.
+is supported out of the box on developer documentation portal.
 
 Some examples of Mermaid diagrams can be found [below](#examples). For usage instructions
 and the full range of supported diagrams,

@@ -7,7 +7,7 @@ If your documentation is maintained by a team, you can either:
 - Use a personal account and invite individual collaborators
 
   This allows you to work on public and private repositories. However, only the _owner_ of the GitHub repository will be able to publish
-  or unpublish documentation on the Documentation Portal.
+  or unpublish documentation on the developer documentation portal.
 
 - Use teams in a GitHub organisation account
 
@@ -16,18 +16,18 @@ If your documentation is maintained by a team, you can either:
 
   Any individual or team with `admin` level access to the repository would be able to publish/unpublish that documentation from the documentation portal.
 
-  An example of an organisation repository's access configuration is shown below. In this example, only `Team mate 1` and `Repository Owner` have the rights to publish/unpublish the documentation from the Documentation Portal.
+  An example of an organisation repository's access configuration is shown below. In this example, only `Team mate 1` and `Repository Owner` have the rights to publish/unpublish the documentation from the documentation portal.
 
   ![GitHub organization repository access management screenshot](../assets/github_org_repo_access.png)
 
-  > For your convenience, you can use the [Documentation Portal's GitHub organisation](https://github.com/Documentation-Portal) to host your documentation repositories.
+  > For your convenience, you can use the [developer documentation portal's GitHub organisation](https://github.com/Documentation-Portal) to host your documentation repositories.
   > Contact gds_developer_portal@tech.gov.sg to find out more.
 
 ## Configuring permissions for readers
 
 If you publish a project in `public` mode, it will be publicly accessible from the internet.
 
-If you choose `private` mode, only users logged in to Documentation Portal through TechPass will be able to see it. 
+If you choose `private` mode, only users logged in to developer documentation portal through TechPass will be able to see it. 
 
 In private mode, you can also set specific access controls via email domains or specific emails. For example, access granted for `tech.gov.sg` and `john@example.gov.sg` allows all users with a tech.gov.sg email as well as the user whose email is john@example.gov.sg to read your published documentation.
 
