@@ -4,7 +4,7 @@ With this portal, developers like you can write project documentation with markd
 
 ## Why do I have to write technical documentation?
 
-Technical documentation is crucial for your users to understand and use your software and its APIs. It helps you support customers better while significantly [improving the satisfaction of your users.](https://www.sciencedirect.com/science/article/abs/pii/037872069090063N)
+Technical documentation is crucial for your users to understand and use your software and its APIs. It helps you support customers better while significantly [improving the satisfaction of your users with your product.](https://www.sciencedirect.com/science/article/abs/pii/037872069090063N)
 
 ## Public and private documentation
 
@@ -16,7 +16,7 @@ You have the choice in deciding who can access your documentation: the public, l
 
 The developer documentation portal supports two documentation formats:
 
-- Markdown, rendered with the [Docsify](https://docsify.js.org) site renderer.
+- Markdown, rendered with the [Docsify](https://docsify.js.org) documentation renderer.
 - OpenAPI (also known as Swagger) definitions in JSON or YAML, rendered through the [ReDoc](https://github.com/redocly/redoc) API documentation renderer.
 
 You will need a TechPass and Github account. [Get started](get-started) today!
