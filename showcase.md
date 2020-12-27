@@ -10,6 +10,7 @@ Explore examples of documentation written in docsify and markdown:
 - https://apache.github.io/incubator-weex-ui/#/
 - https://docs.anycable.io/#/v1/
 - https://docs.inlets.dev/
+- https://typicode.github.io/husky/#/
 - https://ned.im/noty/#/
 - https://samlify.js.org/#/
 - https://realrashid.github.io/sweet-alert/
