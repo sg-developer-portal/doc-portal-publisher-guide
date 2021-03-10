@@ -20,7 +20,7 @@ If your documentation is maintained by a team, you can either:
 
   ![GitHub organization repository access management screenshot](../assets/github_org_repo_access.png)
 
-  > For your convenience, you can use the [developer documentation portal's GitHub organisation](https://github.com/Documentation-Portal) to host your documentation repositories.
+  > For your convenience, you can use the [developer documentation portal's GitHub organisation](https://github.com/sg-developer-portal) to host your documentation repositories.
   > Contact gds_developer_portal@tech.gov.sg to find out more.
 
 ## Configuring permissions for readers
