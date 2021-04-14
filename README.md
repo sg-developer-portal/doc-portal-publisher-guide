@@ -1,4 +1,4 @@
-# What is this documentation portal for?
+# What is the Developer Portal Documentation Service?
 
 With this portal, developers like you can write project documentation with markdown files, in your own git repositories. They are then automatically synced and published to the documentation portal.
 
