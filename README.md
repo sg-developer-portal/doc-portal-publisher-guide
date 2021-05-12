@@ -12,7 +12,7 @@ You have the choice in deciding who can access your documentation: the public, l
 
 <sup>*</sup> only TechPass users
 
-### Start writing your own documentation
+## Write in markdown or OpenAPI/Swagger
 
 The developer documentation portal supports two documentation formats:
 
