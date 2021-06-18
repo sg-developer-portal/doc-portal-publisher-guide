@@ -1,4 +1,5 @@
 ## Working in teams
+<!-- todo: add a segment about Product Teams -->
 
 > GitHub private repositories for personal and team accounts are [free of charge](https://github.com/pricing).
 
