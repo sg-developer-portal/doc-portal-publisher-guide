@@ -15,7 +15,7 @@ You will need:
 5. To have been added as a member in said 'Product'
 
 
-?> Points 3 - 5 would require you to reach out to the Developer's Portal Team
+?> Points 3 - 5 would require you to reach out to the Developer's Portal Team. Refer to [Working in Teams](/collaboration/teams-and-permissions) for more details
 
 ?> **Products** are government digital solutions such as TechPass, SHIP Hats, NDI etc. You will be able to choose which **Product** you will be writing your documentation for.
 
@@ -28,7 +28,7 @@ If your documentation is in OpenAPI/Swagger, i.e. you are writing API documentat
    <img src="assets/new-publishing/publishing-guide.gif"/>
 </div>
 
-1. Write and preview your documentation on your machine with tools such as [Docsify](/get-started?id=create-and-preview-markdown) for Markdown, and [ReDoc](/get-started?id=preview-oas) for OAS
+1. Write and preview your documentation on your machine with tools such as [Docsify](/get-started?id=create-and-preview-markdown) for Markdown, and [ReDoc](/get-started?id=preview-oas) for OpenAPI
 2. Create a GitHub repository and push your documentation to it
 3. Log in to the developer documentation portal with your TechPass account
 4. Go through the guided publishing flow when you access **Publish documentation** in your product's page:
@@ -93,7 +93,7 @@ You can defined an OpenAPI or Swagger document in `yaml` or `json` and publish t
 
 **<small>Note: This file must be named `swagger.json`, `swagger.yml` or `swagger.yaml`!</small>**
 
-#### Preview OAS
+#### Preview OpenAPI
 You can use the [redoc CLI](https://github.com/Redocly/redoc/tree/master/cli) to preview how your API documentation would look like. You will need to have Node.js and NPM installed on your machine. Use the [official installer](https://nodejs.org/en/) or the [nvm tool](https://github.com/nvm-sh/nvm).
 
 ```bash
@@ -106,7 +106,7 @@ You can then navigate to http://localhost:8080 to preview your rendered API docu
 ![openapi documentation with redoc screenshot](assets/redoc-preview.png)
 
 ### 2. Push to GitHub
-After your Markdown or OAS documentation is prepared, push it to GitHub.
+After your Markdown or OpenAPI documentation is prepared, push it to GitHub.
 
 [Create a new github.com repository](https://github.com/new) (this can be either public or private) and follow
 the instructions on GitHub to push your new repository to that project.
@@ -122,7 +122,7 @@ git push -u origin master
 ```
 >For **Markdown Docs**, you should have at least a `README.md` file at the **root** of your project, which will serve as the home page for your documentation.
 
->For **OAS/Swagger Docs**, you should have at least a `swagger.json`, `swagger.yml` or `swagger.yaml` file at the **root** of your project, which will serve as the home page for your documentation.
+>For **OpenAPI/Swagger Docs**, you should have at least a `swagger.json`, `swagger.yml` or `swagger.yaml` file at the **root** of your project, which will serve as the home page for your documentation.
 
 ### 3. Log in and access your Product space
 
@@ -161,7 +161,7 @@ In this step, you select a repository from your GitHub account to link up to you
 
 In this step, you provide details regarding how you want your documentation to be categorised and displayed. Some example options are, the display name, description, git branch, visibility option (Public/Private) and more.
 1. How you want your Doc to be named and described
-2. Choose whether your Doc can be viewed by anyone (Public), or only for logged-in users who has a TechPass account (Private). Also specify if your Doc is a Markdown or OAS type.
+2. Choose whether your Doc can be viewed by anyone (Public), or only for logged-in users who has a TechPass account (Private). Also specify if your Doc is a Markdown or OpenAPI type.
 3. Additional settings if Markdown type is selected. Refer to <a href="/#/docsify?id=manual-configuration" target="_blank">Docsify configuration</a>
 4. Select a branch of your GitHub repository to publish from.
 5. Additional access control settings for Private Documentation. Refer to <a href="/#/collaboration/teams-and-permissions?id=configuring-permissions-for-readers" target="_blank">Configuring permissions for readers</a>
