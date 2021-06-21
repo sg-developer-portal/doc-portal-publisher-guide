@@ -1,35 +1,59 @@
 # Overview
+<!-- todo: update this diagram -->
+<!-- ![Get Started Overview](assets/get-started-overview.png) -->
 
-![Get Started Overview](assets/get-started-overview.png)
+```mermaid
+graph LR
+   step-1(1. Write documentation)
+   step-2(2. Commit and push with Git)
+   step-3(3. Log in via TechPass)
+   step-4(4. Publish documentation)
+
+   step-1 --> step-2 --> step-3 --> step-4
+```
 
 ## Prerequisites
 
-The developer documentation portal syncs up your documentation repository containing Markdown or OpenAPI(Swagger) files and hosts them as documentation pages.
+The developer portal documentation service syncs up your documentation repository containing Markdown or OpenAPI(Swagger) files and hosts them as documentation pages.
 
 You will need:
 
 1. A [TechPass](https://www.techpass.gov.sg) account to log in and host your documentation.
 2. A free [github.com](https://github.com) account to host your documentation's git repository.
+3. *To be onboarded as a publisher on the Documentation Service.
 
-If your documentation is in Markdown, you will use [Docsify](https://docsify.js.org) to write and structure it on your development machine before pushing it to your GitHub repository.
+?> *To onboard as a publisher, please reach out to the Developer Portal Team [via email](mailto:gds_developer_portal@tech.gov.sg).
 
-If your documentation is in OpenAPI/Swagger, i.e. you are writing API documentation, you will use [ReDoc](https://github.com/Redocly/redoc) to view it on your development machine before pushing your `swagger.json` file to your GitHub repository.
+You can publish 2 types of documentation:
+
+1. Markdown. This requires you to commit a directory of documentation markdown files to a GitHub repository with a `_sidebar.md` file to format the side navigation for documentation readers.
+
+2. OpenAPI/Swagger. This requires you to commit a swagger file to a GitHub repository.
+
+You can then publish your documentation on the Documentation Service via our publisher app (see detailed steps below).
 
 ## Overview of steps
+<div style="text-align:center">
+   <img src="assets/new-publishing/publishing-guide.gif"/>
+</div>
 
-1. Create a new GitHub repository to place your documentation
-2. Push your documentation files to that repository
-3. Log in to the developer documentation portal with your TechPass account
-4. Authorise developer documentation portal to access your GitHub repository's contents
-5. Select the repository containing your documentation and publish it on the developer documentation portal.
+1. Write and preview your documentation on your machine with tools such as [Docsify](/get-started?id=create-and-preview-markdown) for Markdown, and [ReDoc](/get-started?id=preview-oas) for OpenAPI
+2. Create a GitHub repository and push your documentation to it
+3. Log in to the documentation service with your TechPass account
+4. Go through the guided publishing flow via the [publisher app](https://docs.developer.gov.sg/teamdocs/products).
 
-## Quickstart (markdown)
+## Quickstart
 
-The following steps show how to publish a markdown-based documentation repo.
+The two types of documentation that you can publish are:
+1. Markdown 
+2. Open API Specification / Swagger
 
-### 1. Create your Docsify project
+The following examples show you how to get started with the creation of such docs, and also how to serve them on your local machines so that you can have a preview of how they would look like when published.
 
-The easiest way to get started with Docsify is through its [command line tool](https://docsify.js.org/#/quickstart).
+### 1a. Markdown
+#### Create and Preview Markdown
+
+The easiest way to get started with **Docsify** is through its [command line tool](https://docsify.js.org/#/quickstart).
 
 1. You will need to have Node.js and NPM installed on your machine. Use the [official installer](https://nodejs.org/en/) or the [nvm tool](https://github.com/nvm-sh/nvm).
 
@@ -64,50 +88,8 @@ The easiest way to get started with Docsify is through its [command line tool](h
    git commit -m "Initial commit"
    ```
 
-6. [Create a new github.com repository](https://github.com/new) (this can be either public or private) and follow
-   the instructions on GitHub to push your new repository to that project.
+### 1b. OpenAPI Spec
 
-   ```bash
-   # Either SSH authentication
-   git remote add origin git@github.com/my-username/my-project.git
-   # Or HTTP
-   git remote add origin https://github.com/my-username/my-project.git
-
-   # Push to the master branch of your GitHub project
-   git push -u origin master
-   ```
-
-   Note that you should have at least a `README.md` file at the **root** of your project, which will serve as the home page for your documentation.
-
-### 2. Log in and link your TechPass account to your GitHub account
-
-Log in to the developer documentation portal by clicking on `Log in with TechPass`. Navigate to `Browse Docs` > `My Docs` and click on the "authorize to GitHub" link. You will be directed to your GitHub account and you will have to grant OAuth permissions for the documentation portal to pull the contents of your documentation repository and host it.
-
-### 3. Publish your documentation on developer documentation portal
-
-> Make sure you have **pushed** changes made to your documentation files to the master branch on GitHub!
-
-Once your GitHub repository is linked to the documentation portal, you will be able to publish it from the documentation portal.
-
-From the top navigation bar, go to `Browse Docs` > `My Docs`. You should see the your personal or organisational GitHub accounts that developer documentation portal is connected with. Find the GitHub repository containing your documentation and click "Publish".
-
-![My Docs page screenshot](assets/my_docs_list_screen.png)
-
-In the publish menu:
-
-1. Set "Documentation visibility" to "Public" or "Private"
-2. Set "Documentation Technology" to "Markdown".
-3. Fill in the display name for your documentation page.
-4. Click "Publish this project".
-
-![My Docs publish screenshot](assets/my_docs_publish_screen.png)
-
-Once published, your documentation will be hosted at docs.developer.gov.sg. All changes made to your GitHub repository would be automatically
-synced to the documentation portal.
-
-> When published, every push to your documentation repo will be automatically pulled and served by the documentation portal. You can also configure the branch that is published.
-
-## Quickstart (OpenAPI specs)
 
 From the [official OpenAPI specification site](https://swagger.io/specification):
 
@@ -117,13 +99,10 @@ From the [official OpenAPI specification site](https://swagger.io/specification)
 
 You can defined an OpenAPI or Swagger document in `yaml` or `json` and publish that on the developer documentation portal. It would be rendered as a human-readable page using the [ReDoc](https://github.com/Redocly/redoc) engine.
 
-### 1. Create a git repo
-
-### 2. Commit your OpenAPI/Swagger spec as `swagger.json` within the repo
 
 **<small>Note: This file must be named `swagger.json`, `swagger.yml` or `swagger.yaml`!</small>**
 
-#### Previewing your OpenAPI documentation
+#### Preview OpenAPI
 You can use the [redoc CLI](https://github.com/Redocly/redoc/tree/master/cli) to preview how your API documentation would look like. You will need to have Node.js and NPM installed on your machine. Use the [official installer](https://nodejs.org/en/) or the [nvm tool](https://github.com/nvm-sh/nvm).
 
 ```bash
@@ -135,26 +114,79 @@ You can then navigate to http://localhost:8080 to preview your rendered API docu
 
 ![openapi documentation with redoc screenshot](assets/redoc-preview.png)
 
-### 3. Push your repo to GitHub
+### 2. Push to GitHub
+After your Markdown or OpenAPI documentation is prepared, push it to GitHub.
 
-### 4. Log in and link your TechPass account to your GitHub account
+[Create a new github.com repository](https://github.com/new) (this can be either public or private) and follow
+the instructions on GitHub to push your new repository to that project.
 
-Log in to the developer documentation portal by clicking on `Log in with TechPass`. Navigate to `Browse Docs` > `My Docs` and click on the "authorize to GitHub" link. You will be directed to your GitHub account and you will have to grant OAuth permissions for the documentation portal to pull the contents of your documentation repository and host it.
+```bash
+# Either SSH authentication
+git remote add origin git@github.com/my-username/my-project.git
+# Or HTTP
+git remote add origin https://github.com/my-username/my-project.git
 
-### 5. Publish your API documentation
+# Push to the master branch of your GitHub project
+git push -u origin master
+```
+>For **Markdown Docs**, you should have at least a `README.md` file at the **root** of your project, which will serve as the home page for your documentation.
 
-From the top navigation bar, go to `Browse Docs` > `My Docs`. You should see the your personal or organisational GitHub accounts that documentation portal is connected with. Find the GitHub repository containing your documentation and click "Publish".
+>For **OpenAPI/Swagger Docs**, you should have at least a `swagger.json`, `swagger.yml` or `swagger.yaml` file at the **root** of your project, which will serve as the home page for your documentation.
 
-![My Docs page screenshot](assets/my_docs_list_screen.png)
+### 3. Log in and access your Product space
 
-In the publish menu:
+<div style="text-align:center">
+   <img src="assets/new-publishing/access-product.gif"/>
+</div>
 
-1. Set "Documentation visibility" to "Public" or "Private".
-2. Set "Documentation Technology" to "OpenAPI/Swagger".
-3. Fill in the display name for your documentation page.
-4. Click "Publish this project".
+Log in to the developer documentation portal by clicking on `Log in with TechPass` on the navigation bar. 
+
+Navigate to `Team Docs` to find the products what you can publish documentation for.
+
+Select the Product of which you are intending to publish documentation for, then click on the "Publish documentation" button. 
+
+### 4. Publish your documentation with the guided Publishing Wizard
+
+The publishing wizard will guide you through the steps required to get your documentation published.
+#### Step 1. Select a Git Provider
+
+![Select Repo](assets/new-publishing/select-git.png)
+
+In this step, you select a git provider (only GitHub available for now, but more options are coming soon!) and authorise your account to the documentation service with the necessary permissions to perform publishing.
+
+If this is your first time publishing a document, and you have not authorised your GitHub account to us before, you will be prompted to do so when you click next.
+
+#### Step 2. Select a Repository
+
+<div style="text-align:center">
+   <img src="assets/new-publishing/select-repo.png"/>
+</div>
+
+In this step, you select a repository from your GitHub account to link up to your to-be published documentation. Your personal repositories along with the repositories of any organisation/teams of which your GitHub account is an admin of, will be available for selection. You can toggle these options under the 'Account' dropdown selection.
+
+#### Step 3. Enter Document Details
+
+<div style="text-align:center">
+   <img src="assets/new-publishing/document-settings.png"/>
+</div>
+
+In this step, you provide details regarding how you want your documentation to be displayed both for readers and search engines. 
+The common options are:
+
+1. Display Name: The title that people see when clicking on links to your documentation, e.g. "MyTechProduct User Guide"
+2. Description: A short description of your product, e.g. "Find out how to integrate your backend with MyTechProduct here".
+3. Visibility: Public (public internet) vs private (only viewable by logged in TechPass users, with further email/domain-based restrictions available).
+4. Documentation type: choose the format of your documentation, either as pages written in Markdown or OpenAPI/Swagger specifications.
+5. Branch: Choose the branch of your GitHub repo to publish your documentation from.
+
+For more detailed descriptions of each option, see [publishing settings](advanced/publishing-settings).
+
+#### Step 4. Summary
+<div style="text-align:center">
+   <img src="assets/new-publishing/summary.png"/>
+</div>
+
+This is the final step where you review your repository selection and inputs. Upon verifying that all configurations are in order, click on 'Publish Documentation' to have your documentation published!
 
 Once published, your documentation will be hosted at docs.developer.gov.sg. All changes made to your GitHub repository would be automatically
 synced to the documentation portal.
-
-> When published, every push to your documentation repo will be automatically pulled and served by the documentation portal. You can also configure the branch that is published.

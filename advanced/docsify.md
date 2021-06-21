@@ -57,7 +57,7 @@ To understand the items that are `configurable when publishing`, see
 
 ## Manual configuration
 
-![Docsify settings](assets/publish_settings_docsify.png ":size=75%")
+![Docsify settings](../assets/new-publishing/markdown-doc-settings.png )
 
 You can specify certain configurations that would be present on the`window.$docsify` object when publishing.
 
