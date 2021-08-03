@@ -14,6 +14,6 @@
 
 ### Docsify Settings (if documentation type is "markdown")
 
-See [Docsify configuration](/advanced/docsify)
+See [Docsify configuration](docsify)
 
 ### Published branch
