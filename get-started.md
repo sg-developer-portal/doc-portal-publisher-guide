@@ -198,3 +198,7 @@ To publish another documentation from the same repository, repeat Step 1 to 4 of
 When in the "Document Settings" page, provide a different "Display Name" and "Discription", and ensure a different "HomePage" is selected.
 
 Once the new documentation is published, you will be able to see the new published documentation in docs.developer.gov.sg.
+
+<div style="text-align:center">
+   <img src="assets/new-publishing/doc-portal-diff-doc-same-repo.png"/>
+</div>
