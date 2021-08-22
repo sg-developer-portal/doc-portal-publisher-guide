@@ -190,3 +190,11 @@ This is the final step where you review your repository selection and inputs. Up
 
 Once published, your documentation will be hosted at docs.developer.gov.sg. All changes made to your GitHub repository would be automatically
 synced to the documentation portal.
+
+### 5. Publish another documentation from same repository
+
+To publish another documentation from the same repository, repeat Step 1 to 4 of "Publish your documentation with the guided Publishing Wizard" above.
+
+When in the "Document Settings" page, provide a different "Display Name" and "Discription", and ensure a different "HomePage" is selected.
+
+Once the new documentation is published, you will be able to see the new published documentation in docs.developer.gov.sg.
