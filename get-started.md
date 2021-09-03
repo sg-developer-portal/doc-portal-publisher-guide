@@ -53,7 +53,11 @@ The following examples show you how to get started with the creation of such doc
 ### 1a. Markdown
 #### Create and Preview Markdown
 
-The easiest way to get started with **Docsify** is through its [command line tool](https://docsify.js.org/#/quickstart).
+You can write your documentation as a series of markdown files stored on github.com, which would be rendered by the documentation portal as documentation pages.
+
+![](/assets/repo-to-doc-1.png)
+
+The easiest way to get started with writing documentation is to use a tool called [Docsify](https://docsify.js.org), which can help you visualize the documentation pages you are writing in markdown.
 
 1. You will need to have Node.js and NPM installed on your machine. Use the [official installer](https://nodejs.org/en/) or the [nvm tool](https://github.com/nvm-sh/nvm).
 
@@ -65,7 +69,7 @@ The easiest way to get started with **Docsify** is through its [command line too
    git init
    ```
 
-3. Use the [Docsify CLI](https://docsify.js.org/#/quickstart) to generate a documentation site. This creates the README.md and index.html files within your working directory.
+3. Use the [Docsify CLI](https://docsify.js.org/#/quickstart) to generate a documentation site. This creates an index.html file along with a few markdown text files in your directory.
 
    ```bash
    # Install Docsify CLI
@@ -99,9 +103,6 @@ From the [official OpenAPI specification site](https://swagger.io/specification)
 
 You can defined an OpenAPI or Swagger document in `yaml` or `json` and publish that on the developer documentation portal. It would be rendered as a human-readable page using the [ReDoc](https://github.com/Redocly/redoc) engine.
 
-
-**<small>Note: This file must be named `swagger.json`, `swagger.yml` or `swagger.yaml`!</small>**
-
 #### Preview OpenAPI
 You can use the [redoc CLI](https://github.com/Redocly/redoc/tree/master/cli) to preview how your API documentation would look like. You will need to have Node.js and NPM installed on your machine. Use the [official installer](https://nodejs.org/en/) or the [nvm tool](https://github.com/nvm-sh/nvm).
 
@@ -131,7 +132,7 @@ git push -u origin master
 ```
 >For **Markdown Docs**, you should have at least a `README.md` file at the **root** of your project, which will serve as the home page for your documentation.
 
->For **OpenAPI/Swagger Docs**, you should have at least a `swagger.json`, `swagger.yml` or `swagger.yaml` file at the **root** of your project, which will serve as the home page for your documentation.
+>For **OpenAPI/Swagger Docs**, you should use a YAML (.yml or .yaml extension) or JSON (.json extension) file.
 
 ### 3. Log in and access your Product space
 
@@ -173,11 +174,19 @@ In this step, you select a repository from your GitHub account to link up to you
 In this step, you provide details regarding how you want your documentation to be displayed both for readers and search engines. 
 The common options are:
 
-1. Display Name: The title that people see when clicking on links to your documentation, e.g. "MyTechProduct User Guide"
+1. Display Name: The title that people see when clicking on links to your documentation, e.g. "MyTechProduct User Guide". The display name for your documentation **must be unique across the entire site**, so you would not be able to publish a documentation with the same display name as an existing one.
 2. Description: A short description of your product, e.g. "Find out how to integrate your backend with MyTechProduct here".
 3. Visibility: Public (public internet) vs private (only viewable by logged in TechPass users, with further email/domain-based restrictions available).
-4. Documentation type: choose the format of your documentation, either as pages written in Markdown or OpenAPI/Swagger specifications.
+4. Documentation type: choose the format of your documentation. You have two choices:
+   - Markdown: for general documentation consisting of text and images, such as the documentation you are reading right now.
+   - Swagger (OpenAPI specs): for API documentation, stored in the OpenAPI specification format in a YAML or JSON file.
 5. Branch: Choose the branch of your GitHub repo to publish your documentation from.
+
+> **Documentation URL**
+>
+> Your documentation will be available at a URL determined by its given **display name**.
+> For example, if your display name is "MyService User Guide", it will be available a the URL `/docs/myservice-user-guide` as shown below.
+> ![asdf](assets/new-publishing/document-settings-slug.png)
 
 For more detailed descriptions of each option, see [publishing settings](advanced/publishing-settings).
 
@@ -191,9 +200,9 @@ This is the final step where you review your repository selection and inputs. Up
 Once published, your documentation will be hosted at docs.developer.gov.sg. All changes made to your GitHub repository would be automatically
 synced to the documentation portal.
 
-### 5. Publish another documentation from same repository
+## Publishing multiple docs
 
-To publish another documentation from the same repository, repeat Step 1 to 4 of "Publish your documentation with the guided Publishing Wizard" above.
+**You can publish multiple documentation from the same repository!** Simply repeat Step 1 to 4 of "Publish your documentation with the guided Publishing Wizard" above.
 
 When in the "Document Settings" page, provide a different "Display Name" and "Discription", and ensure a different "HomePage" is selected.
 
