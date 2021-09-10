@@ -50,7 +50,9 @@ The two types of documentation that you can publish are:
 
 The following examples show you how to get started with the creation of such docs, and also how to serve them on your local machines so that you can have a preview of how they would look like when published.
 
-### 1a. Markdown
+<!-- tabs:start -->
+
+### **1a. Markdown**
 #### Create and Preview Markdown
 
 You can write your documentation as a series of markdown files stored on github.com, which would be rendered by the documentation portal as documentation pages.
@@ -72,10 +74,8 @@ The easiest way to get started with writing documentation is to use a tool calle
 3. Use the [Docsify CLI](https://docsify.js.org/#/quickstart) to generate a documentation site. This creates an index.html file along with a few markdown text files in your directory.
 
    ```bash
-   # Install Docsify CLI
-   npm install -g docsify-cli
-   # Creates an index.html and README.md within your working directory
-   docsify init .
+   # Initialize the documentation folder with index.html and some .md files
+   npx docsify-cli init .
    ```
 
 4. Start up a live-reloading server for your documentation. Open a browser and view it at http://localhost:3000.
@@ -92,8 +92,7 @@ The easiest way to get started with writing documentation is to use a tool calle
    git commit -m "Initial commit"
    ```
 
-### 1b. OpenAPI Spec
-
+### **1b. OpenAPI Spec**
 
 From the [official OpenAPI specification site](https://swagger.io/specification):
 
@@ -101,7 +100,7 @@ From the [official OpenAPI specification site](https://swagger.io/specification)
 >
 > An OpenAPI document (or set of documents) defines or describes an API. An OpenAPI definition uses and conforms to the OpenAPI Specification.
 
-You can defined an OpenAPI or Swagger document in `yaml` or `json` and publish that on the developer documentation portal. It would be rendered as a human-readable page using the [ReDoc](https://github.com/Redocly/redoc) engine.
+You can define an OpenAPI or Swagger document in `yaml` or `json` and publish that on the developer documentation portal. It would be rendered as a human-readable page using the [ReDoc](https://github.com/Redocly/redoc) engine.
 
 #### Preview OpenAPI
 You can use the [redoc CLI](https://github.com/Redocly/redoc/tree/master/cli) to preview how your API documentation would look like. You will need to have Node.js and NPM installed on your machine. Use the [official installer](https://nodejs.org/en/) or the [nvm tool](https://github.com/nvm-sh/nvm).
@@ -114,6 +113,8 @@ redoc-cli serve swagger.yml
 You can then navigate to http://localhost:8080 to preview your rendered API documentation:
 
 ![openapi documentation with redoc screenshot](assets/redoc-preview.png)
+
+<!-- tabs:end -->
 
 ### 2. Push to GitHub
 After your Markdown or OpenAPI documentation is prepared, push it to GitHub.
@@ -130,8 +131,8 @@ git remote add origin https://github.com/my-username/my-project.git
 # Push to the master branch of your GitHub project
 git push -u origin master
 ```
->For **Markdown Docs**, you should have at least a `README.md` file at the **root** of your project, which will serve as the home page for your documentation.
-
+>For **Markdown Docs**, your home page defaults to your `README.md` file at the **root** of your project.
+>
 >For **OpenAPI/Swagger Docs**, you should use a YAML (.yml or .yaml extension) or JSON (.json extension) file.
 
 ### 3. Log in and access your Product space
