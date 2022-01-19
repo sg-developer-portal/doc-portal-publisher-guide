@@ -48,4 +48,4 @@ If you choose `private` mode, only users logged in to developer documentation po
 
 In private mode, you can also set specific access controls via email domains or specific emails. For example, access granted for `tech.gov.sg` and `john@example.gov.sg` allows all users with a tech.gov.sg email as well as the user whose email is john@example.gov.sg to read your published documentation.
 
-You can also specify the category that your documentation belongs to. For a complete description of publishing settings, see [advanced settings](advanced/publish-settings).
+You can also specify the category that your documentation belongs to. For a complete description of publishing settings, see [advanced settings](advanced/publishing-settings).
