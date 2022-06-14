@@ -1,7 +1,17 @@
 # Overview
+<!-- todo: update this diagram -->
+<!-- ![Get Started Overview](assets/get-started-overview.png) -->
 
+```mermaid
+graph LR
+   step-1(1. Write documentation)
+   step-2(2. Commit and push with Git)
+   step-3(3. Log in via TechPass)
+   step-4(4. Publish documentation)
+
+   step-1 --> step-2 --> step-3 --> step-4
+```
 ## Prerequisites
-
 The developer portal documentation service syncs up your documentation repository containing Markdown or OpenAPI(Swagger) files and hosts them as documentation pages.
 
 You will need:
