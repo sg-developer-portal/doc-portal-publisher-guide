@@ -203,7 +203,7 @@ synced to the documentation portal.
 
 **You can publish multiple documentation from the same repository!** Simply repeat Step 1 to 4 of "Publish your documentation with the guided Publishing Wizard" above.
 
-When in the "Document Settings" page, provide a different "Display Name" and "Discription", and ensure a different "HomePage" is selected.
+When in the "Document Settings" page, provide a different "Display Name" and "Description", and ensure a different "HomePage" is selected.
 
 Once the new documentation is published, you will be able to see the new published documentation in docs.developer.gov.sg.
 
