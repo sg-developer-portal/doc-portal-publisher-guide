@@ -49,7 +49,3 @@ The way our publishing flow and backend logic is set up, it does not support thi
    3. When an update is made to a sub folder (`sub-dir`) through github, it will retrigger the publishing flow for all of the documents tied to this repository
 
 **We are working on solutions to fix this but we are discouraging it in the meantime as it could dampen your Doc Portal experience.**
-
-## Inaccurate Last Commit Display
-
-When publishing big files, the last commit detail might appear even though not all the files are done publishing yet. We are working on a better way to display data for this.
