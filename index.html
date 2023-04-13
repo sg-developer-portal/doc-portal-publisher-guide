@@ -14,6 +14,10 @@
       rel="stylesheet"
       href="//cdn.jsdelivr.net/npm/@sg-developer-portal/doc-theme-default@0.0.13/public/dist/doc.css"
     />
+    <link 
+      rel="stylesheet" 
+      href="https://unpkg.com/@developerportalsg/docsify-plugin-toc@latest/dist/light.css"
+    />
   </head>
   <body>
     <div id="app"></div>
@@ -50,6 +54,11 @@
             },
           },
         },
+        toc: {
+					tocMaxLevel: 5,
+					target: "h2, h3, h4, h5, h6",
+					ignoreHeaders: ["<!-- {docsify-ignore} -->", "<!-- {docsify-ignore-all} -->"],
+				},
       };
     </script>
 
@@ -59,5 +68,6 @@
     <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/docsify-tabs/dist/docsify-tabs.min.js"></script>
+    <script src="https://unpkg.com/@developerportalsg/docsify-plugin-toc@latest/dist/docsify-plugin-toc.min.js"></script>
   </body>
 </html>
