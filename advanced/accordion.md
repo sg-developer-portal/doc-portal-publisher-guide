@@ -49,12 +49,13 @@ You can now create accordions using markdown syntax. Here's an example:
 
 ```html
 <details>
-	<summary>This is a super cool title</summary>
-	<p>This is a super cool paragraph</p>
-	<small>This is a super cool small paragraph</small>
-	<b>Veni Vidi Vici</b>
+<summary>This is a super cool title</summary><!-- Good place for a CTA (Call to Action) -->
+  <!-- leave an empty line *️⃣  -->
+  <p>This is a super cool paragraph</p>
+  <small>This is a super cool small paragraph</small>
+  <b>Veni Vidi Vici</b>
 </details>
-```
+<!-- leave an empty line *️⃣  -->
 
 This code creates an accordion with the title "This is a super cool title" and the content "This is a super cool paragraph", "This is a super cool small paragraph" and "Veni Vidi Vici".
 
@@ -72,8 +73,8 @@ Here's an example using the attributes:
 
 ```html
 <details data-is-open="true" data-is-size="small" data-is-color="is-warning">
-	<summary>...</summary>
-	...
+<summary>...</summary>
+...
 </details>
 ```
 
@@ -87,7 +88,7 @@ In this example, the accordion will be expanded by default (data-is-open="true")
 ### No Header, No Body
 
 <details data-is-open=true data-is-color="dark">
-  <summary style="font-size:20px"></summary>
+    <summary style="font-size:20px"></summary>
 
 </details>
 
