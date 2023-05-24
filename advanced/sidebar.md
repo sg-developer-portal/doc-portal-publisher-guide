@@ -1,4 +1,4 @@
-# Sidebar Plugin
+# Using the Sidebar Plugin
 
 The Sidebar plugin allows you to nest your page links into interactive folders
 you can collapse and uncollapse!
