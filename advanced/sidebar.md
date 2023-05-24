@@ -73,28 +73,28 @@ To create a link folder:
 Installation and Setup
 
 - Installation Guide
-    - [Windows Installation](install-guide/windows.md)
-    - [Mac Installation](install-guide/mac.md)
-    - [Linux Installation](install-guide/linux.md)
-- [User Guide](user-guide/overview.md)
-    - [Getting Started](user-guide/getting-started.md)
-    - [Configuration](user-guide/configuration.md)
+    - [Windows Installation](install-guide/windows)
+    - [Mac Installation](install-guide/mac)
+    - [Linux Installation](install-guide/linux)
+- [User Guide](user-guide/overview)
+    - [Getting Started](user-guide/getting-started)
+    - [Configuration](user-guide/configuration)
 - API Reference
-    - [API Documentation](api-reference/api-documentation.md)
+    - [API Documentation](api-reference/api-documentation)
 
 Usage and Support
 
 - Troubleshooting
     - Common Issues
-        - [Error Messages](troubleshooting/error-messages.md)
-        - [Troubleshooting FAQ](troubleshooting/faq.md)
-    - [Known Issues](troubleshooting/known-issues.md)
+        - [Error Messages](troubleshooting/error-messages)
+        - [Troubleshooting FAQ](troubleshooting/faq)
+    - [Known Issues](troubleshooting/known-issues)
 - Support
-    - [Contact Us](support/contact-us.md)
-    - [Community Forums](support/community-forums.md)
+    - [Contact Us](support/contact-us)
+    - [Community Forums](support/community-forums)
 - [Release Notes](release-notes/overview)
-    - [Version 1.0](release-notes/v1.0.md)
-    - [Version 2.0](release-notes/v2.0.md)
+    - [Version 1.0](release-notes/v1.0)
+    - [Version 2.0](release-notes/v2.0)
 ```
 
 ### Output
