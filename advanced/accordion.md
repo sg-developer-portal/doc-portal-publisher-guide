@@ -1,4 +1,4 @@
-# Accordion Plugin
+# Using and Customising the Docsify Accordion Plugin
 
 The Accordion plugin allows you to create collapsible sections of content. This is useful for long pages with sections that are not always relevant to all readers.
 
@@ -56,6 +56,7 @@ You can now create accordions using markdown syntax. Here's an example:
   <b>Veni Vidi Vici</b>
 </details>
 <!-- leave an empty line *️⃣  -->
+```
 
 This code creates an accordion with the title "This is a super cool title" and the content "This is a super cool paragraph", "This is a super cool small paragraph" and "Veni Vidi Vici".
 
@@ -112,7 +113,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 </p>
 </details>
 
-## Got Header and Body
+### Got Header and Body
 <details data-is-open=true data-is-color='primary' data-is-size="medium">
     <summary>Got header and body</summary>
 
@@ -121,7 +122,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 </p>
 </details>
 
-### Got Header, Got Body And Comments 😺
+### Got Header, Got Body And Emojis 😺
 
 <details data-is-color="rainbow">
     <summary><h1>Heading 😺😺😺😺😺</h1></summary>
@@ -149,7 +150,7 @@ Github Repo
 
 </details>
 
-## Integration with different plugin
+## Integration with existing Docsify plugin
 
 <details>
     <summary><h1 style="color:red;"><b><i>Very Fancy TItle</i></b></h1></summary>
