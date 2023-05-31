@@ -95,7 +95,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 ```
 <details>
-<summary>Got header and body</summary>
+<summary>Very Cool and Fancy Title</summary>
 
 <p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet risus nullam eget felis. Eros in cursus turpis massa tincidunt dui ut. Eget nulla facilisi etiam dignissim diam quis. Magna etiam tempor orci eu lobortis elementum nibh tellus molestie. Varius duis at consectetur lorem donec massa. Bibendum neque egestas congue quisque. Egestas egestas fringilla phasellus faucibus. Quis viverra nibh cras pulvinar mattis nunc. A lacus vestibulum sed arcu non. Feugiat sed lectus vestibulum mattis. Quis viverra nibh cras pulvinar. Eget sit amet tellus cras adipiscing enim eu turpis egestas. Purus non enim praesent elementum. Porta lorem mollis aliquam ut porttitor leo a. Convallis aenean et tortor at. Aenean et tortor at risus viverra adipiscing at in.
