@@ -7,7 +7,7 @@ The SGDS Accordion is a custom implementation of the `<summary>` and `<details>`
 
 This overview will guide you on how to use the SGDS Accordion to replace the standard `<summary>` and `<details>` in Markdown.
 
-### Step 1: Configure docsify-accordion-plugin
+### Step 1: Configure docsify-accordion-plugin (Only relevant when editing on local)
 To get started, you need to configure the docsify-accordion-plugin in your Docsify project. Add the following code to the HTML file where you initialize Docsify:
 
 ```html
@@ -20,7 +20,7 @@ To get started, you need to configure the docsify-accordion-plugin in your Docsi
 
 This configuration enables the use of the SGDS (Singapore Government Design System) accordion style for your accordions.
 
-### Step 2: Insert style/script into docsify document
+### Step 2: Insert style/script into docsify document (Only relevant when editing on local)
 Next, you need to insert the necessary styles and scripts into your Docsify document. Add the following code to the `<head>` section of your HTML file:
 
 ```html
@@ -122,137 +122,3 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 </p>
 </details>
 
-### Got Header, Got Body And Emojis 😺
-
-<details data-is-color="rainbow">
-    <summary><h1>Heading 😺😺😺😺😺</h1></summary>
-    <!-- LEAVE A GAP BELOW -->
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet risus nullam eget felis. Eros in cursus turpis massa tincidunt dui ut. Eget nulla facilisi etiam dignissim diam quis. Magna etiam tempor orci eu lobortis elementum nibh tellus molestie. Varius duis at consectetur lorem donec massa. Bibendum neque egestas congue quisque. Egestas egestas fringilla phasellus faucibus. Quis viverra nibh cras pulvinar mattis nunc. A lacus vestibulum sed arcu non. Feugiat sed lectus vestibulum mattis. Quis viverra nibh cras pulvinar. Eget sit amet tellus cras adipiscing enim eu turpis egestas. Purus non enim praesent elementum. Porta lorem mollis aliquam ut porttitor leo a. Convallis aenean et tortor at. Aenean et tortor at risus viverra adipiscing at in.
-
-</details>
-
-## Raw Text With Styles
-
-<details>
-    <summary><h3 style="color:blue;"><b><i>Big Fancy Body</i></b></h3></summary>
-
-<small>Hello world</small>
-<h1>Bye World</h1>
-
-</details>
-
-<details>
-    <summary><h1 style="color:red;"><b><i>Big Fancy Title With Image</i></b></h1></summary>
-
-Github Repo
-![GitHub organization repository access management screenshot](../assets/github_org_repo_access.png)
-
-</details>
-
-## Integration with existing Docsify plugin
-
-<details>
-    <summary><h1 style="color:red;"><b><i>Very Fancy TItle</i></b></h1></summary>
-
-## Docsify Markdown Extensions
-
-?> Docsify provides [some useful extensions to markdown](https://docsify.js.org/#/helpers). Some examples are shown below.
-
-### Content highlighting
-
-Use `?>` and `!>` before text to highlight blocks of content:
-
-```markdown
-?> This is highlighted
-
-!> And so am I
-```
-
-?> This is highlighted
-
-!> And so am I
-
-### Image resizing
-
-```
-![logo](https://docsify.js.org/_media/icon.svg)
-![logo](https://docsify.js.org/_media/icon.svg ':size=50x100')
-![logo](https://docsify.js.org/_media/icon.svg ':size=100')
-![logo](https://docsify.js.org/_media/icon.svg ':size=45%')
-```
-
-![logo](https://docsify.js.org/_media/icon.svg)
-![logo](https://docsify.js.org/_media/icon.svg ":size=50x100")
-![logo](https://docsify.js.org/_media/icon.svg ":size=100")
-![logo](https://docsify.js.org/_media/icon.svg ":size=45%")
-
-### Set target attribute for link
-
-```
-[link](/example ':target=_blank')
-[link](/example2 ':target=_self')
-```
-
-[link](/example ":target=_blank")
-[link](/example2 ":target=_self")
-
-### Disabled Link
-
-```
-[link](/demo ':disabled')
-```
-
-[link](/demo ":disabled")
-
-## HTML
-
-Some useful HTML elements are available for adding default interactivity and illustrations.
-
-### Nested Details/summary for dropdown content
-
-
-<details>
-<summary>Click me to expand!</summary>
-
-I can contain markdown content too. Just leave a newline between markdown and HTML elements.
-
-- Abc
-- Def
-
-</details>
-
-
-### Progress/meter bars
-
-```html
-<progress value="70" max="100"></progress>
-
-<meter
-  min="0" max="100"
-  low="33" high="66" optimum="80"
-  value="50">
-Current value: 50/100
-</meter>
-```
-
-<progress value="70" max="100"></progress>
-
-<meter
-  min="0" max="100"
-  low="33" high="66" optimum="80"
-  value="50">
-Current value: 50/100
-</meter>
-
-</details>
-
-<details>
-    <summary>"><script>alert(document.cookie)</script></summary>
-
-"><script>alert(document.cookie)</script>
-
-Github Repo
-![GitHub organization repository access management screenshot](../assets/github_org_repo_access.png)
-
-</details>
