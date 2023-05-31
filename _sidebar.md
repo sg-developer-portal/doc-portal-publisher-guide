@@ -5,7 +5,7 @@
   * [Publishing settings](advanced/publishing-settings)
   * [Docsify configuration](advanced/docsify)
   * [Markdown features](advanced/markdown-features)
-  * [Using and Customising the Accordion Plugin](advanced/accordion)
+  * [Accordion Plugin](advanced/accordion)
   * [Sidebar Plugin](advanced/sidebar)
 * Collaboration
   * [Teams and permissions](collaboration/teams-and-permissions)
