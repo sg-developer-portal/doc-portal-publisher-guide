@@ -67,8 +67,6 @@ You can also customize the accordions using various attributes. Here are some op
 | Attribute | Type | Default | Description |
 | --------- | ---- | ------- | ----------- |
 | `data-is-open="*VALUE*"` | `boolean` | `false` | Replace `*VALUE*` with `true` or `false` to expand the accordion on page load. |
-| `data-is-size="*VALUE*"` | `string` | `medium` | Replace `*VALUE*` with `is-small`, `is-medium`, or `is-large` for various text sizes. |
-| `data-is-color="*VALUE*"` | `string` | `null` | Replace `*VALUE*` with contextual text color classes (`is-danger`, `is-warning`, `is-success`, etc.) for various background colors. For more colour choices, reference <a href="https://v1.designsystem.tech.gov.sg/docs/colours/">here</a>! |
 
 Here's an example using the attributes:
 
