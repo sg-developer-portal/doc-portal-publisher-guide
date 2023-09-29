@@ -114,9 +114,10 @@ You can then navigate to http://localhost:8080 to preview your rendered API docu
 
 <!-- tabs:end -->
 
-### 2. Push to Git
-<!-- tabs:start -->
-### **2a. Push to GitHub**
+<!-- tabs:start Push to Git-->
+
+### 2. Push to Git Repo
+### **2a. Push GitHub**
 After your Markdown or OpenAPI documentation is prepared, push it to GitHub.
 
 [Create a new github.com repository](https://github.com/new) (this can be either public or private) and follow
@@ -135,36 +136,48 @@ git push -u origin master
 >
 >For **OpenAPI/Swagger Docs**, you should use a YAML (.yml or .yaml extension) or JSON (.json extension) file.
 
-### 3. Log in and access your Product space
+### **1b. Push to GitLabc**
 
-<div style="text-align:center">
-   <img src="assets/new-publishing/access-product.gif"/>
-</div>
+From the [official OpenAPI specification site](https://swagger.io/specification):
 
-Log in to the developer documentation portal by clicking on `Log in with TechPass` on the navigation bar. 
+> The OpenAPI Specification (OAS) defines a standard, language-agnostic interface to RESTful APIs which allows both humans and computers to discover and understand the capabilities of the service without access to source code, documentation, or through network traffic inspection.
+>
+> An OpenAPI document (or set of documents) defines or describes an API. An OpenAPI definition uses and conforms to the OpenAPI Specification.
 
-Navigate to `Team Docs` to find the products what you can publish documentation for.
+You can define an OpenAPI or Swagger document in `yaml` or `json` and publish that on the developer documentation portal. It would be rendered as a human-readable page using the [ReDoc](https://github.com/Redocly/redoc) engine.
 
-Select the Product of which you are intending to publish documentation for, then click on the "Publish documentation" button.
+#### Preview OpenAPI
+You can use the [redoc CLI](https://github.com/Redocly/redoc/tree/master/cli) to preview how your API documentation would look like. You will need to have Node.js and NPM installed on your machine. Use the [official installer](https://nodejs.org/en/) or the [nvm tool](https://github.com/nvm-sh/nvm).
 
-### **2a. Push to GitLab**
-After your Markdown or OpenAPI documentation is prepared, push it to GitLab.
+```bash
+npm i -g redoc-cli
+redoc-cli serve swagger.yml
+```
 
-[Create a new sgts.gitlab-dedicated.com repository](sgts.gitlab-dedicated.com) (this can be either public or private) and follow
-the instructions on GitLab to push your new repository to that project.
+You can then navigate to http://localhost:8080 to preview your rendered API documentation:
+
+![openapi documentation with redoc screenshot](assets/redoc-preview.png)
+
+<!-- tabs:end -->
+
+<!-- ### 2. Push to GitHub
+After your Markdown or OpenAPI documentation is prepared, push it to GitHub.
+
+[Create a new github.com repository](https://github.com/new) (this can be either public or private) and follow
+the instructions on GitHub to push your new repository to that project.
 
 ```bash
 # Either SSH authentication
-git remote add origin git@sgts.gitlab-dedicated.com/wog/agency/groupname/my-project.git
+git remote add origin git@github.com/my-username/my-project.git
 # Or HTTP
-git remote add origin https://sgts.gitlab-dedicated.com/wog/agency/groupname/my-project.git
+git remote add origin https://github.com/my-username/my-project.git
 
 # Push to the master branch of your GitHub project
 git push -u origin master
 ```
 >For **Markdown Docs**, your home page defaults to your `README.md` file at the **root** of your project.
 >
->For **OpenAPI/Swagger Docs**, you should use a YAML (.yml or .yaml extension) or JSON (.json extension) file.
+>For **OpenAPI/Swagger Docs**, you should use a YAML (.yml or .yaml extension) or JSON (.json extension) file. -->
 
 ### 3. Log in and access your Product space
 
@@ -176,7 +189,7 @@ Log in to the developer documentation portal by clicking on `Log in with TechPas
 
 Navigate to `Team Docs` to find the products what you can publish documentation for.
 
-Select the Product of which you are intending to publish documentation for, then click on the "Publish documentation" button.
+Select the Product of which you are intending to publish documentation for, then click on the "Publish documentation" button. 
 
 ### 4. Publish your documentation with the guided Publishing Wizard
 
