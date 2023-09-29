@@ -139,7 +139,7 @@ git push -u origin master
 
 #### **Push to GitLab**
 
-After your Markdown or OpenAPI documentation is prepared, push it to GitHub.
+After your Markdown or OpenAPI documentation is prepared, push it to GitLab.
 
 [Create a new sgts.gitlab-dedicated.com repository](https://sgts.gitlab-dedicated.com/projects/new) (this can be either public or private) and follow
 the instructions on GitLab to push your new repository to that project.
@@ -230,7 +230,7 @@ The common options are:
 4. Documentation type: choose the format of your documentation. You have two choices:
    - Markdown: for general documentation consisting of text and images, such as the documentation you are reading right now.
    - Swagger (OpenAPI specs): for API documentation, stored in the OpenAPI specification format in a YAML or JSON file.
-5. Branch: Choose the branch of your GitHub repo to publish your documentation from.
+5. Branch: Choose the branch of your GitHub/GitLab repo to publish your documentation from.
 
 > **Documentation URL**
 >
@@ -247,7 +247,7 @@ For more detailed descriptions of each option, see [publishing settings](advance
 
 This is the final step where you review your repository selection and inputs. Upon verifying that all configurations are in order, click on 'Publish Documentation' to have your documentation published!
 
-Once published, your documentation will be hosted at docs.developer.gov.sg. All changes made to your GitHub repository would be automatically
+Once published, your documentation will be hosted at docs.developer.gov.sg. All changes made to your GitHub/GitLab repository would be automatically
 synced to the documentation portal.
 
 ## Publishing multiple docs
