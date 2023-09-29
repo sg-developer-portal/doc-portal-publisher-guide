@@ -1,7 +1,7 @@
 * [Overview](/)
-* [Get started]
+* Get started
   * [Publish with GitHub Repository](get-started-github)
-  * [Publish with GitLab Repository](get-started-github)
+  * [Publish with GitLab Repository](get-started)
 * Advanced features
   * [Diagrams with Mermaid](advanced/mermaid)
   * [Publishing settings](advanced/publishing-settings)

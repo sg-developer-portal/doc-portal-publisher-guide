@@ -17,16 +17,16 @@ The developer portal documentation service syncs up your documentation repositor
 You will need:
 
 1. A [TechPass](https://www.techpass.gov.sg) account to log in and host your documentation.
-2. A free [github.com](https://github.com) account to host your documentation's git repository.
+2. A free [github.com](https://github.com) or [sgts.gitlab-dedicated.com](https://sgts.gitlab-dedicated.com) account to host your documentation's git repository.
 3. *To be onboarded as a publisher on the Documentation Service.
 
 ?> *To onboard as a publisher, please reach out to the Developer Portal Team [via email](mailto:gds_developer_portal@tech.gov.sg).
 
 You can publish 2 types of documentation:
 
-1. Markdown. This requires you to commit a directory of documentation markdown files to a GitHub repository with a `_sidebar.md` file to format the side navigation for documentation readers.
+1. Markdown. This requires you to commit a directory of documentation markdown files to a GitHub/GitLab repository with a `_sidebar.md` file to format the side navigation for documentation readers.
 
-2. OpenAPI/Swagger. This requires you to commit a swagger file to a GitHub repository.
+2. OpenAPI/Swagger. This requires you to commit a swagger file to a GitHub/GitLab repository.
 
 You can then publish your documentation on the Documentation Service via our publisher app (see detailed steps below).
 
@@ -36,7 +36,7 @@ You can then publish your documentation on the Documentation Service via our pub
 </div>
 
 1. Write and preview your documentation on your machine with tools such as [Docsify](/get-started?id=create-and-preview-markdown) for Markdown, and [ReDoc](/get-started?id=preview-oas) for OpenAPI
-2. Create a GitHub repository and push your documentation to it
+2. Create a GitHub/GitLab repository and push your documentation to it
 3. Log in to the documentation service with your TechPass account
 4. Go through the guided publishing flow via the [publisher app](https://docs.developer.gov.sg/teamdocs/products).
 
@@ -53,7 +53,7 @@ The following examples show you how to get started with the creation of such doc
 ### **1a. Markdown**
 #### Create and Preview Markdown
 
-You can write your documentation as a series of markdown files stored on github.com, which would be rendered by the documentation portal as documentation pages.
+You can write your documentation as a series of markdown files stored on github.com or sgts.gitlab-dedicated.com, which would be rendered by the documentation portal as documentation pages.
 
 ![](/assets/repo-to-doc-1.png)
 
@@ -114,7 +114,9 @@ You can then navigate to http://localhost:8080 to preview your rendered API docu
 
 <!-- tabs:end -->
 
-### 2. Push to GitHub
+### 2. Push to Git
+<!-- tabs:start -->
+### **2a. Push to GitHub**
 After your Markdown or OpenAPI documentation is prepared, push it to GitHub.
 
 [Create a new github.com repository](https://github.com/new) (this can be either public or private) and follow
@@ -143,7 +145,38 @@ Log in to the developer documentation portal by clicking on `Log in with TechPas
 
 Navigate to `Team Docs` to find the products what you can publish documentation for.
 
-Select the Product of which you are intending to publish documentation for, then click on the "Publish documentation" button. 
+Select the Product of which you are intending to publish documentation for, then click on the "Publish documentation" button.
+
+### **2a. Push to GitLab**
+After your Markdown or OpenAPI documentation is prepared, push it to GitLab.
+
+[Create a new sgts.gitlab-dedicated.com repository](sgts.gitlab-dedicated.com) (this can be either public or private) and follow
+the instructions on GitLab to push your new repository to that project.
+
+```bash
+# Either SSH authentication
+git remote add origin git@sgts.gitlab-dedicated.com/wog/agency/groupname/my-project.git
+# Or HTTP
+git remote add origin https://sgts.gitlab-dedicated.com/wog/agency/groupname/my-project.git
+
+# Push to the master branch of your GitHub project
+git push -u origin master
+```
+>For **Markdown Docs**, your home page defaults to your `README.md` file at the **root** of your project.
+>
+>For **OpenAPI/Swagger Docs**, you should use a YAML (.yml or .yaml extension) or JSON (.json extension) file.
+
+### 3. Log in and access your Product space
+
+<div style="text-align:center">
+   <img src="assets/new-publishing/access-product.gif"/>
+</div>
+
+Log in to the developer documentation portal by clicking on `Log in with TechPass` on the navigation bar. 
+
+Navigate to `Team Docs` to find the products what you can publish documentation for.
+
+Select the Product of which you are intending to publish documentation for, then click on the "Publish documentation" button.
 
 ### 4. Publish your documentation with the guided Publishing Wizard
 
