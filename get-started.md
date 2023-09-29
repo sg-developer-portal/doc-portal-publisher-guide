@@ -114,10 +114,11 @@ You can then navigate to http://localhost:8080 to preview your rendered API docu
 
 <!-- tabs:end -->
 
-<!-- tabs:start Push to Git-->
-
 ### 2. Push to Git Repo
-### **2a. Push GitHub**
+<!-- tabs:start -->
+#### **Push to GitHub**
+<!-- ##### 2a. Push to GitHub -->
+
 After your Markdown or OpenAPI documentation is prepared, push it to GitHub.
 
 [Create a new github.com repository](https://github.com/new) (this can be either public or private) and follow
@@ -136,48 +137,29 @@ git push -u origin master
 >
 >For **OpenAPI/Swagger Docs**, you should use a YAML (.yml or .yaml extension) or JSON (.json extension) file.
 
-### **1b. Push to GitLabc**
+#### **Push to GitLab**
 
-From the [official OpenAPI specification site](https://swagger.io/specification):
-
-> The OpenAPI Specification (OAS) defines a standard, language-agnostic interface to RESTful APIs which allows both humans and computers to discover and understand the capabilities of the service without access to source code, documentation, or through network traffic inspection.
->
-> An OpenAPI document (or set of documents) defines or describes an API. An OpenAPI definition uses and conforms to the OpenAPI Specification.
-
-You can define an OpenAPI or Swagger document in `yaml` or `json` and publish that on the developer documentation portal. It would be rendered as a human-readable page using the [ReDoc](https://github.com/Redocly/redoc) engine.
-
-#### Preview OpenAPI
-You can use the [redoc CLI](https://github.com/Redocly/redoc/tree/master/cli) to preview how your API documentation would look like. You will need to have Node.js and NPM installed on your machine. Use the [official installer](https://nodejs.org/en/) or the [nvm tool](https://github.com/nvm-sh/nvm).
-
-```bash
-npm i -g redoc-cli
-redoc-cli serve swagger.yml
-```
-
-You can then navigate to http://localhost:8080 to preview your rendered API documentation:
-
-![openapi documentation with redoc screenshot](assets/redoc-preview.png)
-
-<!-- tabs:end -->
-
-<!-- ### 2. Push to GitHub
 After your Markdown or OpenAPI documentation is prepared, push it to GitHub.
 
-[Create a new github.com repository](https://github.com/new) (this can be either public or private) and follow
-the instructions on GitHub to push your new repository to that project.
+[Create a new sgts.gitlab-dedicated.com repository](https://sgts.gitlab-dedicated.com/projects/new) (this can be either public or private) and follow
+the instructions on GitLab to push your new repository to that project.
 
 ```bash
 # Either SSH authentication
-git remote add origin git@github.com/my-username/my-project.git
+git remote add origin git@sgts.gitlab-dedicated.com/group/my-project.git
 # Or HTTP
-git remote add origin https://github.com/my-username/my-project.git
+git remote add origin https://sgts.gitlab-dedicated.com/group/my-project.git
 
 # Push to the master branch of your GitHub project
 git push -u origin master
 ```
 >For **Markdown Docs**, your home page defaults to your `README.md` file at the **root** of your project.
 >
->For **OpenAPI/Swagger Docs**, you should use a YAML (.yml or .yaml extension) or JSON (.json extension) file. -->
+>For **OpenAPI/Swagger Docs**, you should use a YAML (.yml or .yaml extension) or JSON (.json extension) file.
+
+
+
+<!-- tabs:end -->
 
 ### 3. Log in and access your Product space
 
@@ -193,23 +175,46 @@ Select the Product of which you are intending to publish documentation for, then
 
 ### 4. Publish your documentation with the guided Publishing Wizard
 
+<!-- ##### 2a. Push to GitHub -->
 The publishing wizard will guide you through the steps required to get your documentation published.
 #### Step 1. Select a Git Provider
+<!-- tabs:start -->
+##### **Select GitHub**
 
 ![Select Repo](assets/new-publishing/select-git.png)
 
-In this step, you select a git provider (only GitHub available for now, but more options are coming soon!) and authorise your account to the documentation service with the necessary permissions to perform publishing.
+In this step, you select a git provider (only GitHub & GitLab available for now, but more options are coming soon!) and authorise your account to the documentation service with the necessary permissions to perform publishing.
 
 If this is your first time publishing a document, and you have not authorised your GitHub account to us before, you will be prompted to do so when you click next.
 
+##### **Select GitLab**
+
+![Select Repo](assets/new-publishing/select-git-gitlab.png)
+
+In this step, you select a git provider (only GitHub & GitLab available for now, but more options are coming soon!) and authorise your account to the documentation service with the necessary permissions to perform publishing.
+
+If this is your first time publishing a document, and you have not authorised your GitLab account to us before, you will be prompted to do so when you click next.
+
+<!-- tabs:end -->
+
 #### Step 2. Select a Repository
+<!-- tabs:start -->
+##### **Select GitHub Repository**
 
 <div style="text-align:center">
-   <img src="assets/new-publishing/select-repo.png"/>
+   <img src="assets/new-publishing/select-repo-github.png"/>
 </div>
 
 In this step, you select a repository from your GitHub account to link up to your to-be published documentation. Your personal repositories along with the repositories of any organisation/teams of which your GitHub account is an admin of, will be available for selection. You can toggle these options under the 'Account' dropdown selection.
 
+##### **Select GitLab Repository**
+
+<div style="text-align:center">
+   <img src="assets/new-publishing/select-repo-gitlab.png"/>
+</div>
+
+In this step, you select a repository from your GitLab account to link up to your to-be published documentation. Your personal repositories along with the repositories of any organisation/teams of which your GitLab account is an admin of, will be available for selection. You can toggle these options under the 'Groups' dropdown selection.
+<!-- tabs:end -->
 #### Step 3. Enter Document Details
 
 <div style="text-align:center">
