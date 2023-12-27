@@ -50,3 +50,10 @@ The way our publishing flow and backend logic is set up, it does not support thi
 
 
 **We are working on solutions to fix this but we are discouraging it in the meantime as it could dampen your Doc Portal experience.**
+
+## Renew Gitlab Project Access Token
+
+The GitLab project access token has a validity of 365 days and must be renewed before it expires to avoid synchronization issues between your repository and documentation. To renew the GitLab project access token:
+
+   1. Access the 'Manage Documentation' page for a document that was published using the GitLab project access token.
+   2. Click on the 'Renew Project GitSource' button. This action will renew the token and update the existing documentation with the new token."
