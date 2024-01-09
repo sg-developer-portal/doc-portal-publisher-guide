@@ -18,7 +18,7 @@ In the future, we are also thinking of displaying some metadata in the team docs
 1. Use file explorer or finder in local to get the file size
 2. Use command `du -sh {path to folder e.g /Users/yannyeinaung/doc-publisher-guide}` (you can run `pwd` to get path of current directory)
 3. Call github api in browser `https://api.github.com/repos/{owner}/{repo}` e.g `https://api.github.com/repos/sg-developer-portal/doc-portal-publisher-guide` which will return a json object with `size` key which will display the size of repo in KB. Only works with public repos.
-   
+
 ## Maximum Files in One Folder
 
 In accordance to [S3's Request Limit](https://aws.amazon.com/premiumsupport/knowledge-center/s3-request-limit-avoid-throttling/), `under each directory(folder) maximum of 3500 files are allowed`. A `folder` refers to the prefixes before the last `/` and a `file` is anything that's not a folder, consider this example:
@@ -50,10 +50,3 @@ The way our publishing flow and backend logic is set up, it does not support thi
 
 
 **We are working on solutions to fix this but we are discouraging it in the meantime as it could dampen your Doc Portal experience.**
-
-## Renew Gitlab Project Access Token
-
-The GitLab project access token has a validity of 365 days and must be renewed before it expires to avoid synchronization issues between your repository and documentation. To renew the GitLab project access token:
-
-   1. Access the 'Manage Documentation' page for a document that was published using the GitLab project access token.
-   2. Click on the 'Renew Project GitSource' button. This action will renew the token and update the existing documentation with the new token."
