@@ -11,5 +11,6 @@
   * [Teams and permissions](collaboration/teams-and-permissions)
   * [Collaborative publishing](collaboration/collaborative-publishing)
 * [Limitations](limitations)
+* [Maintenance](maintenance)
 * [Issues](issues)
 * [Showcase](showcase)
