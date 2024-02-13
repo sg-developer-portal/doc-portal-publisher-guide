@@ -1,7 +1,7 @@
-## Working in teams
+## Teams and Permissions
 <!-- todo: add a segment about Product Teams -->
 
-### Developer's Portal
+### Working in Teams
 
 > **Products** are government digital solutions which requires documenting. Examples of Products are TechPass, SHIP Hats, NDI, etc. 
 
