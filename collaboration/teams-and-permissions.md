@@ -43,7 +43,7 @@ If your documentation is maintained by a team, you can either:
 For collaboration with regards to the documentation's contents on GitLab's repositories, see below.
 ### GitLab
 
-> Gitlab private repositories for personal and team accounts are [free of charge](using SHIP-HATS).
+> Gitlab private repositories for personal and team accounts are [free of charge](https://sgts.gitlab-dedicated.com/).
 
 If your documentation is maintained by a team, you can either:
 
@@ -53,11 +53,9 @@ If your documentation is maintained by a team, you can either:
 
   Any individual or group memebers with `developer` level access to the repository would be able to publish/unpublish that documentation from the documentation portal.
 
-  An example of an organisation repository's access configuration is shown below. In this example, only `Anbarasan` and `Andy Lam` have the rights to publish/unpublish the documentation from the documentation portal.
+  An example of an group repository's access configuration is shown below. In this example, only `Anbarasan` and `Andy Lam` have the rights to publish/unpublish the documentation from the documentation portal.
 
   ![GitLab group members repository access management screenshot](../assets/gitlab_group_repo_access.png)
-
-  > Contact gds_developer_portal@tech.gov.sg to find out more.  
 
 ## Configuring permissions for readers
 
