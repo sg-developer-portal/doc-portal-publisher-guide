@@ -40,6 +40,25 @@ If your documentation is maintained by a team, you can either:
   > For your convenience, you can use the [developer documentation portal's GitHub organisation](https://github.com/sg-developer-portal) to host your documentation repositories.
   > Contact gds_developer_portal@tech.gov.sg to find out more.
 
+For collaboration with regards to the documentation's contents on GitLab's repositories, see below.
+### GitLab
+
+> Gitlab private repositories for personal and team accounts are [free of charge](using SHIP-HATS).
+
+If your documentation is maintained by a team, you can either:
+
+- Use a personal account and invite individual members/groups with minimum access of `developer`role.
+
+  This allows you to work on public and private repositories.
+
+  Any individual or group memebers with `developer` level access to the repository would be able to publish/unpublish that documentation from the documentation portal.
+
+  An example of an organisation repository's access configuration is shown below. In this example, only `Anbarasan` and `Andy Lam` have the rights to publish/unpublish the documentation from the documentation portal.
+
+  ![GitLab group members repository access management screenshot](../assets/gitlab_group_repo_access.png)
+
+  > Contact gds_developer_portal@tech.gov.sg to find out more.  
+
 ## Configuring permissions for readers
 
 If you publish a project in `public` mode, it will be publicly accessible from the internet.
