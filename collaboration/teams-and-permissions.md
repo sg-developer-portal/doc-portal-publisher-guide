@@ -43,7 +43,7 @@ If your documentation is maintained by a team, you can either:
 For collaboration with regards to the documentation's contents on SHIP-HATS GitLab's repositories, see below.
 ### GitLab
 
-> You can use [SHIP-HATS GitLab](https://sgts.gitlab-dedicated.com/) private/internal repositories for host your documentations via personal and teams accounts.
+> You can use [SHIP-HATS GitLab](https://sgts.gitlab-dedicated.com/) private/internal repositories for hosting your documentation.
 
 - Any individual or group memebers with minimum `developer` level access to the repository would be able to publish/unpublish that documentation in the documentation portal.
 
