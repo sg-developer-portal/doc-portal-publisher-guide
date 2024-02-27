@@ -51,7 +51,6 @@ For collaboration with regards to the documentation's contents on SHIP-HATS GitL
 
   ![GitLab group members repository access management screenshot](../assets/gitlab_group_repo_access.png)
 
-  > For your convenience, you can use the [SHIP-HATS GitLab](https://sgts.gitlab-dedicated.com/) to host your documentation repositories.
   > Should you require further information please feel free to contact [Developer Portal Team](https://t.me/+2UFSzS6404ozNjA9).
 
 ## Configuring permissions for readers
