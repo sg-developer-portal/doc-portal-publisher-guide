@@ -38,7 +38,7 @@ If your documentation is maintained by a team, you can either:
   ![GitHub organization repository access management screenshot](../assets/github_org_repo_access.png)
 
   > For your convenience, you can use the [developer documentation portal's GitHub organisation](https://github.com/sg-developer-portal) to host your documentation repositories.
-  > Contact gds_developer_portal@tech.gov.sg to find out more.
+  > Should you require further information please feel free to contact [Developer Portal Team](https://t.me/+2UFSzS6404ozNjA9).
 
 For collaboration with regards to the documentation's contents on SHIP-HATS GitLab's repositories, see below.
 ### GitLab
@@ -50,6 +50,9 @@ For collaboration with regards to the documentation's contents on SHIP-HATS GitL
   An example of an organisation repository's access configuration is shown below. In this example, only `Anbarasan` and `Andy Lam` have the rights to publish/unpublish the documentation from the documentation portal.
 
   ![GitLab group members repository access management screenshot](../assets/gitlab_group_repo_access.png)
+
+  > For your convenience, you can use the [SHIP-HATS GitLab](https://sgts.gitlab-dedicated.com/) to host your documentation repositories.
+  > Should you require further information please feel free to contact [Developer Portal Team](https://t.me/+2UFSzS6404ozNjA9).
 
 ## Configuring permissions for readers
 
