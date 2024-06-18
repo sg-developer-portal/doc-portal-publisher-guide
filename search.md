@@ -7,6 +7,7 @@ Documents that are referenced in the `_sidebar.md` file will be indexed, this is
 # Limitations
 * It only supports text, it does not search within resources like PDF files. 
 * We are checking embedded documents links only, broken links for other cases are not supported now.
+
 > Please let us know if any of these are needed, we will gather interests and prioritize accordingly, thank you.
 
 # Private Documentation
