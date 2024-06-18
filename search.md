@@ -7,7 +7,22 @@ Documents that are referenced in the `_sidebar.md` file will be indexed, this is
 # Synonyms 
 We maintain a set of synonyms, do let us know if they are more:
 ```md
-[synonyms](synonyms.md ':include')
+aws => amazon web services
+DynamoDb, DDB
+SHIPHATS, SHIP-HATS
+SGTS, Singapore Government Tech Stack
+CStack,Container Stack
+CICD, CI/CD
+Continuous Integration (CI), CI/CD
+Continuous Delivery (CD),Continuous Deployment
+Infrastructure as Code (IaC), Programmable Infrastructure
+Orchestration, Automation
+Deployment Pipeline, Release Pipeline, Delivery Pipeline
+Monitoring and Observability,Application Performance Monitoring (APM)
+Version Control, Source Control
+Agile Development, Agile Software Development
+training, learning
+FOD, Fortify on demand
 ```
 
 # Frequently asked questions
