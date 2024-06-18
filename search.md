@@ -5,7 +5,7 @@ Our search is powered by [AWS Kendra](https://aws.amazon.com/kendra/), it not on
 Documents that are referenced in the `_sidebar.md` file will be indexed, this is because we don't want the files to be exposed accidentally in search page. But take note for such case, user will still be able to access the document via direct url access.
 
 # Synonyms 
-We maintain a set of synonyms, do let us know if they are more:
+We maintain a set of [synonyms](https://docs.aws.amazon.com/kendra/latest/dg/index-synonyms.html), do let us know if they are more:
 ```md
 aws => amazon web services
 DynamoDb, DDB
@@ -26,7 +26,7 @@ FOD, Fortify on demand
 ```
 
 # Frequently asked questions
-> If you have FAQs that want to be featured in the search results, do let us know!
+> If you have [FAQs](https://docs.aws.amazon.com/kendra/latest/dg/in-creating-faq.html) that want to be featured in the search results, do let us know!
 
 # Limitations
 * It only supports text, it does not search within resources like PDF files. 
