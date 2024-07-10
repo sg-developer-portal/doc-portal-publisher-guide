@@ -1,16 +1,8 @@
-# Overview
-<!-- todo: update this diagram -->
-<!-- ![Get Started Overview](assets/get-started-overview.png) -->
+# Get started
 
-```mermaid
-graph LR
-   step-1(1. Write documentation)
-   step-2(2. Commit and push with Git)
-   step-3(3. Log in via TechPass)
-   step-4(4. Publish documentation)
+The Developer Portal Documentation Service enables developers to write and publish project documentation with markdown files or OpenAPI/Swagger specifications. The documentation is then automatically synced and published to the documentation portal.
 
-   step-1 --> step-2 --> step-3 --> step-4
-```
+
 ## Prerequisites
 The developer portal documentation service syncs up your documentation repository containing Markdown or OpenAPI(Swagger) files and hosts them as documentation pages.
 
@@ -35,10 +27,11 @@ You can then publish your documentation on the Documentation Service via our pub
    <img src="assets/new-publishing/publishing-guide.gif"/>
 </div>
 
-1. Write and preview your documentation on your machine with tools such as [Docsify](/get-started?id=create-and-preview-markdown) for Markdown, and [ReDoc](/get-started?id=preview-oas) for OpenAPI
-2. Create a GitHub/GitLab repository and push your documentation to it
-3. Log in to the documentation service with your TechPass account
-4. Go through the guided publishing flow via the [publisher app](https://docs.developer.gov.sg/teamdocs/products).
+1. Clone the content starter kit from [GitLab](https://sgts.gitlab-dedicated.com/innersource/sgts/devportal/docs-portal-content-starter-kit).
+2. Write and preview your documentation on your machine with tools such as [Docsify](/get-started?id=create-and-preview-markdown) for Markdown, and [ReDoc](/get-started?id=preview-oas) for OpenAPI
+3. Create a GitHub/GitLab repository and push your documentation to it
+4. Log in to the documentation service with your TechPass account
+5. Go through the guided publishing flow via the [publisher app](https://docs.developer.gov.sg/teamdocs/products).
 
 ## Quickstart
 
