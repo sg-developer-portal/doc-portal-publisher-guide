@@ -19,8 +19,6 @@ The developer documentation portal supports two documentation formats:
 - Markdown, rendered with the [Docsify](https://docsify.js.org) documentation renderer.
 - OpenAPI (also known as Swagger) definitions in JSON or YAML, rendered through the [ReDoc](https://github.com/redocly/redoc) API documentation renderer.
 
-You will need a TechPass and GitHub account. [Get started](get-started) today!
-
 ## How to publish documentation
 
 Follow these steps to publish your documentation:
