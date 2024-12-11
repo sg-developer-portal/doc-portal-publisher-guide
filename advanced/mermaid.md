@@ -15,7 +15,8 @@ configuration in your `index.html` file as shown below:
 <body>
 
   <!-- 1. Import mermaid.js, BEFORE the window.$docsify initialisation -->
-  <script src="//cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@9.1.7/dist/mermaid.min.js"
+        integrity="sha256-G58AID1YoX5YaEtWfXSI0VLrZ6N4kvNvwg0BI8zUFxE=" crossorigin="anonymous"></script>
   
   <script>
     // 2. Add the two lines below before declaring the window.$docsify object:
