@@ -8,7 +8,7 @@ The developer portal documentation service syncs up your documentation repositor
 
 You will need:
 
-1. A [TechPass](https://www.techpass.gov.sg) account to log in and host your documentation.
+1. A [TechPass](https://docs.developer.tech.gov.sg/docs/techpass-user-guide/) account to log in and host your documentation.
 2. A free [github.com](https://github.com) or [sgts.gitlab-dedicated.com](https://sgts.gitlab-dedicated.com) account to host your documentation's git repository.
 3. *To be onboarded as a publisher on the Documentation Service.
 
