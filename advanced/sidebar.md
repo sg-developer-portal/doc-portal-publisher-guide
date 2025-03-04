@@ -1,103 +1,175 @@
 # Using the Sidebar Plugin
 
-The Sidebar plugin allows you to nest your page links into interactive folders
-you can collapse and uncollapse!
+# Overview
 
-## Setup
+The docsify library's sidebar is good, but it can be _better_. The
+[docsify-sidebar-collapse](https://github.com/sg-developer-portal/docsify-sidebar-collapse)
+project overrides the docsify library's render sidebar function at runtime
+allowing it total and full control over how the sidebar can be rendered into the
+DOM!
 
-### Step 1: Configure docsify-sidebar-collapse plugin
+## Features
 
-Add the following code to the HTML file where you initialize Docsify:
+- 🪹 Nested links 🪹
+- 🔥 Collapsible links 🔥
+- ✨ Animations ✨
+- 🚦 Link highlights 🚦
+
+## Installation & Setup
+
+1. Insert the sidebar CSS link into the `index.html` file~ You can insert it
+   almost anywhere in the file... but the best practise is to have inserted in your
+   `<head> ... </head>` tag!
 
 ```html
-	window.$docsify = {
-		enableSidebarCollapse: true
-	};
-```
+<!-- Example: -->
 
-This configuration enables the plugin to toggle on or off.
-
-### Step 2: Insert style/script into 
-
-Insert the necessary styles and scripts into your Docsify document. Ensure the 
-following code is inside the `head` section of you HTML file:
-
-```html
 <head>
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@sg-developer-portal/doc-theme-default@0.0.13/public/dist/doc.css">
+  <!-- your other stuffs... -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@developerportalsg/docsify-sidebar-collapse@2.0.7/dist/index.css"
+  />
 </head>
 ```
 
-This code imports the required CSS stylesheets for the theme of the Docisfy page.
-
-Add the following code to the <body> section of your HTML file:
+2. Insert the sidebar JS link into the `index.html` file~ You can insert it
+   almost anywhere in the file... but the best practise is to have inserted at the
+   end of your `<body> ... </body>` tag!
 
 ```html
+<!-- Example: -->
+
 <body>
-    <script src="//cdn.jsdelivr.net/npm/@lx0f/docsify-sidebar-collapse@latest/dist/docsify-sidebar-collapse.bundle.js"></script>
+  <!-- your other stuffs... -->
+  <script
+    defer
+    src="https://cdn.jsdelivr.net/npm/@developerportalsg/docsify-sidebar-collapse@2.0.7/dist/index.js"
+    integrity="sha256-IQ+Vb8nvh6Em+4DUZswgICb3wl2N6wWlKIJlfj57vjY="
+    crossorigin="anonymous"
+  ></script>
 </body>
 ```
 
-This code imports the JavaScript file for the docsify-sidebar-collapse plugin.
+3. Configure the properties `enableSidebarCollapse` and `nameLink` in your docisfy
+   configuration!
 
-### Step 3: Create/Update your sidebar markdown file
+- `enableSidebarCollapse` is a boolean flag that determines if the render sidebar
+  will be overrided.
+- `nameLink` is a string that determines your documents "base path".
 
-To create a top level category/section:
+> Configuring your `nameLink` is important as it determines the "root" of your
+> documentation page! For example, if `nameLink` is set to `/docs/my-awesome-doc`,
+> sidebar links that point to `/`, (e.g. `[link](/)]`) will now point to `/docs/my-awesome-doc`.
 
-```md
-Category/Section
-
-- Links
-...
+```html
+<!-- Example: -->
+<script>
+  window.$docsify = {
+    enableSidebarCollapse: true,
+    nameLink: "/docs/your-awesome-slug",
+  };
+</script>
 ```
 
-To create a folder:
+## Usage
+
+### Example
 
 ```md
-- Folder
-    - [Link](link/to/file)
+Section One
+
+- [Overview](overview)
+- [Advanced](advanced)
+  - [Feature One](advanced/feature-one)
+  - [Feature Two](advanced/feature-two)
+    - [Secret Feature...](advanced/secret)
+
+Section Two
+
+- [Nested](nested)
 ```
 
-To create a link folder:
+> Note! If your documentation has nested sidebars, make sure to include a link
+> that helps your users to go back to the previous section / one level back.
+>
+> ```md
+> <!-- Example: -->
+>
+> - [Content Here](./content)
+> - [Content There](./content-there)
+>
+> ---
+>
+> - [Back](../overview)
+> ```
+>
+> `---` creates a horizontal line, this helps create a visual seperation between
+> your content links and navigation links.
+
+### Rules
+
+We tried our best to keep the plugin compatible with existing `_sidebar.md`s,
+but in case it breaks, here are two rules to help streamline your sidebar
+making shenanigans!
+
+1. One Line, One Link
 
 ```md
-- [Link Folder](link/to/file)
-    - [Nested Link](link/to/another/file)
+<!-- Correct ✅ -->
+
+- [Link](link)
+- [Another Link](another-link)
+  - [Nested One](nested/one)
+  - [Nested Two](nested/two)
+
+<!-- Wrong ❌ -->
+
+- [Inside](inside) and [Outside](outside)
+- [Seperated](seperated) and [Superstitious](https://superstitious.com)
 ```
 
-## Example
-
-### Markdown
+2. Keep Everything Inside The Link
 
 ```md
-Installation and Setup
+<!-- Correct ✅ -->
 
-- Installation Guide
-    - [Windows Installation](install-guide/windows)
-    - [Mac Installation](install-guide/mac)
-    - [Linux Installation](install-guide/linux)
-- [User Guide](user-guide/overview)
-    - [Getting Started](user-guide/getting-started)
-    - [Configuration](user-guide/configuration)
-- API Reference
-    - [API Documentation](api-reference/api-documentation)
+- [Link](link)
+- [Another Link](another-link)
+  - [Nested One](nested/one)
+  - [Nested Two](nested/two)
 
-Usage and Support
+<!-- Wrong ❌ -->
 
-- Troubleshooting
-    - Common Issues
-        - [Error Messages](troubleshooting/error-messages)
-        - [Troubleshooting FAQ](troubleshooting/faq)
-    - [Known Issues](troubleshooting/known-issues)
-- Support
-    - [Contact Us](support/contact-us)
-    - [Community Forums](support/community-forums)
-- [Release Notes](release-notes/overview)
-    - [Version 1.0](release-notes/v1.0)
-    - [Version 2.0](release-notes/v2.0)
+- [Inside](inside) and Outside
+- [Seperated](seperated) and Superstitious
 ```
 
-### Output
+3. Decorate Inside Links Fully
 
-![Example Sidebar Output](../assets/example-sidebar.gif)
+```md
+<!-- Correct ✅ -->
 
+- [_Italicised_](italicised)
+- [**Bolded**](bolded)
+- [_Whole Style I_](whole-style/i)
+- [**Whole Style B**](whole-style/b)
+
+<!-- Wrong ❌ -->
+
+- _[Italicised](italicised)_
+- **[Bolded](bolded)**
+- [Partially _Italicised_](partial/italicised)
+- [Partially **Bolded**](partial/bolded)
+```
+
+<!--
+Dear Firefox users,
+
+This update is my aplogy to you for neglecting compatibility with firefox for the
+previous sidebar update. I hope this update makes up for it and that it helps
+your readers have a better experience using your documentation 🙏.
+
+Sincerely,
+Loofes Doofes
+-->
