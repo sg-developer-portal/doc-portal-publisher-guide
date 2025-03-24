@@ -24,7 +24,7 @@ You can then publish your documentation on the Documentation Service via our pub
 
 ## Overview of steps
 <div style="text-align:center">
-   <img src="assets/new-publishing/publishing-guide.gif"/>
+   <img src="./assets/new-publishing/publishing-guide.gif"/>
 </div>
 
 1. Clone the content starter kit from [GitLab](https://sgts.gitlab-dedicated.com/innersource/sgts/devportal/docs-portal-content-starter-kit).
