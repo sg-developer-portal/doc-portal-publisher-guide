@@ -23,9 +23,7 @@ You can publish 2 types of documentation:
 You can then publish your documentation on the Documentation Service via our publisher app (see detailed steps below).
 
 ## Overview of steps
-<div style="text-align:center">
-   <img src="assets/new-publishing/publishing-guide.gif"/>
-</div>
+![](assets/new-publishing/publishing-guide.gif)
 
 1. Clone the content starter kit from [GitLab](https://sgts.gitlab-dedicated.com/innersource/sgts/devportal/docs-portal-content-starter-kit).
 2. Write and preview your documentation on your machine with tools such as [Docsify](/get-started?id=create-and-preview-markdown) for Markdown, and [ReDoc](/get-started?id=preview-oas) for OpenAPI
@@ -155,10 +153,7 @@ git push -u origin master
 <!-- tabs:end -->
 
 ### 3. Log in and access your Product space
-
-<div style="text-align:center">
-   <img src="assets/new-publishing/access-product.gif"/>
-</div>
+![](assets/new-publishing/access-product.gif)
 
 Log in to the developer documentation portal by clicking on `Log in with TechPass` on the navigation bar. 
 
@@ -193,26 +188,18 @@ If this is your first time publishing a document, and you have not authorised yo
 #### Step 2. Select a Repository
 <!-- tabs:start -->
 ##### **Select GitHub Repository**
-
-<div style="text-align:center">
-   <img src="assets/new-publishing/select-repo-github.png"/>
-</div>
+![](assets/new-publishing/select-repo-github.png)
 
 In this step, you select a repository from your GitHub account to link up to your to-be published documentation. Your personal repositories along with the repositories of any organisation/teams of which your GitHub account is an admin of, will be available for selection. You can toggle these options under the 'Account' dropdown selection.
 
 ##### **Select GitLab Repository**
-
-<div style="text-align:center">
-   <img src="assets/new-publishing/select-repo-gitlab.png"/>
-</div>
+![](assets/new-publishing/select-repo-gitlab.png)
 
 In this step, you select a repository from your GitLab account to link up to your to-be published documentation. Your personal repositories along with the repositories of any organisation/teams of which your GitLab account is an admin of, will be available for selection. You can toggle these options under the 'Groups' dropdown selection.
 <!-- tabs:end -->
 #### Step 3. Enter Document Details
 
-<div style="text-align:center">
-   <img src="assets/new-publishing/document-settings.png"/>
-</div>
+![](assets/new-publishing/document-settings.png)
 
 In this step, you provide details regarding how you want your documentation to be displayed both for readers and search engines. 
 The common options are:
@@ -234,9 +221,7 @@ The common options are:
 For more detailed descriptions of each option, see [publishing settings](advanced/publishing-settings).
 
 #### Step 4. Summary
-<div style="text-align:center">
-   <img src="assets/new-publishing/summary.png"/>
-</div>
+![](assets/new-publishing/summary.png)
 
 This is the final step where you review your repository selection and inputs. Upon verifying that all configurations are in order, click on 'Publish Documentation' to have your documentation published!
 
@@ -251,6 +236,4 @@ When in the "Document Settings" page, provide a different "Display Name" and "De
 
 Once the new documentation is published, you will be able to see the new published documentation in docs.developer.gov.sg.
 
-<div style="text-align:center">
-   <img src="assets/new-publishing/doc-portal-diff-doc-same-repo.png"/>
-</div>
+![](assets/new-publishing/doc-portal-diff-doc-same-repo.png)
