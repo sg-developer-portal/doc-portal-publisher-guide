@@ -12,7 +12,7 @@ You will need:
 2. A free [github.com](https://github.com) or [sgts.gitlab-dedicated.com](https://sgts.gitlab-dedicated.com) account to host your documentation's git repository.
 3. *To be onboarded as a publisher on the Documentation Service.
 
-?> *To onboard as a publisher, please reach out to the Developer Portal Team [via email](mailto:gds_developer_portal@tech.gov.sg).
+?> *To onboard as a publisher, please reach out to the Developer Portal Team via [this form](https://form.gov.sg/66e7d1b4ae4c3750e0c85ace).
 
 You can publish 2 types of documentation:
 
