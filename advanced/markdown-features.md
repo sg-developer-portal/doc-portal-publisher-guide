@@ -350,16 +350,16 @@ Right aligned columns
 ## Links
 
 ``````markdown
-[link text](http://dev.nodeca.com)
+[link text](https://www.tech.gov.sg/)
 
-[link with title](http://nodeca.github.io/pica/demo/ "title text!")
+[link with title](https://www.tech.gov.sg/ "title text!")
 
 Autoconverted link https://github.com/nodeca/pica (enable linkify to see)
 ``````
 
-[link text](http://dev.nodeca.com)
+[link text](https://www.tech.gov.sg/)
 
-[link with title](http://nodeca.github.io/pica/demo/ "title text!")
+[link with title](https://www.tech.gov.sg/ "title text!")
 
 Autoconverted link https://github.com/nodeca/pica (enable linkify to see)
 

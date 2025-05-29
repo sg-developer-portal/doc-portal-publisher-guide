@@ -67,7 +67,7 @@ The easiest way to get started with writing documentation is to use a tool calle
    npx docsify-cli init .
    ```
 
-4. Start up a live-reloading server for your documentation. Open a browser and view it at http://localhost:3000.
+4. Start up a live-reloading server for your documentation. Open a browser and view it at `http://localhost:3000`.
 
    ```bash
    # View your documentation at http://localhost:3000
@@ -92,14 +92,14 @@ From the [official OpenAPI specification site](https://swagger.io/specification)
 You can define an OpenAPI or Swagger document in `yaml` or `json` and publish that on the developer documentation portal. It would be rendered as a human-readable page using the [ReDoc](https://github.com/Redocly/redoc) engine.
 
 #### Preview OpenAPI
-You can use the [redoc CLI](https://github.com/Redocly/redoc/tree/master/cli) to preview how your API documentation would look like. You will need to have Node.js and NPM installed on your machine. Use the [official installer](https://nodejs.org/en/) or the [nvm tool](https://github.com/nvm-sh/nvm).
+You can use the [redoc CLI](https://redocly.com/docs/redoc/deployment/cli) to preview how your API documentation would look like. You will need to have Node.js and NPM installed on your machine. Use the [official installer](https://nodejs.org/en/) or the [nvm tool](https://github.com/nvm-sh/nvm).
 
 ```bash
 npm i -g redoc-cli
 redoc-cli serve swagger.yml
 ```
 
-You can then navigate to http://localhost:8080 to preview your rendered API documentation:
+You can then navigate to `http://localhost:8080` to preview your rendered API documentation:
 
 ![openapi documentation with redoc screenshot](assets/redoc-preview.png)
 
