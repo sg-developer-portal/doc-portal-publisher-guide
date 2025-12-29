@@ -15,9 +15,21 @@ You may view the team member details of your Product by browsing to `Team Docs` 
 All members in the Product will be able to manage document settings on Developer's Portal. For example, changing the document's display name, the git branch from which it is published from and more.
 
 For collaboration with regards to the documentation's contents on GitHub's repositories, see below.
+
+### GitLab
+
+  > You can use [SHIP-HATS GitLab](https://sgts.gitlab-dedicated.com/) private/internal repositories for hosting your documentation.
+
+- Any individual or group members with minimum `maintainer` level access to the repository would be able to publish/unpublish that documentation in the documentation portal.
+
+  An example of an organisation repository's access configuration is shown below. In this example, only `Anbarasan` and `Andy Lam` have the rights to publish/unpublish the documentation from the documentation portal.
+
+  ![GitLab group members repository access management screenshot](../assets/gitlab_group_repo_access.png)
+
+  > Should you require further information please feel free to contact [Developer Portal Team](https://t.me/+2UFSzS6404ozNjA9).
 ### GitHub
 
-> GitHub private repositories for personal and team accounts are [free of charge](https://github.com/pricing).
+!> Documentation hosted on GitHub private repositories will migrate to SHIP-HATS GitLab.
 
 If your documentation is maintained by a team, you can either:
 
@@ -41,17 +53,6 @@ If your documentation is maintained by a team, you can either:
   > Should you require further information please feel free to contact [Developer Portal Team](https://t.me/+2UFSzS6404ozNjA9).
 
 For collaboration with regards to the documentation's contents on SHIP-HATS GitLab's repositories, see below.
-### GitLab
-
-  > You can use [SHIP-HATS GitLab](https://sgts.gitlab-dedicated.com/) private/internal repositories for hosting your documentation.
-
-- Any individual or group members with minimum `maintainer` level access to the repository would be able to publish/unpublish that documentation in the documentation portal.
-
-  An example of an organisation repository's access configuration is shown below. In this example, only `Anbarasan` and `Andy Lam` have the rights to publish/unpublish the documentation from the documentation portal.
-
-  ![GitLab group members repository access management screenshot](../assets/gitlab_group_repo_access.png)
-
-  > Should you require further information please feel free to contact [Developer Portal Team](https://t.me/+2UFSzS6404ozNjA9).
 
 ## Configuring permissions for readers
 
