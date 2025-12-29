@@ -9,7 +9,7 @@ The developer portal documentation service syncs up your documentation repositor
 You will need:
 
 1. A [TechPass](https://docs.developer.tech.gov.sg/docs/techpass-user-guide/) account to log in and host your documentation.
-2. A free [github.com](https://github.com) or [sgts.gitlab-dedicated.com](https://sgts.gitlab-dedicated.com) account to host your documentation's git repository.
+2. A [SHIP-HATS GitLab](https://sgts.gitlab-dedicated.com) account to host your documentation's git repository.
 3. *To be onboarded as a publisher on the Documentation Service.
 
 ?> *To onboard as a publisher, please reach out to the Developer Portal Team via [this form](https://form.gov.sg/66e7d1b4ae4c3750e0c85ace).
@@ -105,30 +105,8 @@ You can then navigate to `http://localhost:8080` to preview your rendered API do
 
 <!-- tabs:end -->
 
-### 2. Push to Git Repo
+### 2. Push to SHIP-HATS GitLab Repo
 <!-- tabs:start -->
-#### **Push to GitHub**
-<!-- ##### 2a. Push to GitHub -->
-
-After your Markdown or OpenAPI documentation is prepared, push it to GitHub.
-
-[Create a new github.com repository](https://github.com/new) (this can be either public or private) and follow
-the instructions on GitHub to push your new repository to that project.
-
-```bash
-# Either SSH authentication
-git remote add origin git@github.com/my-username/my-project.git
-# Or HTTP
-git remote add origin https://github.com/my-username/my-project.git
-
-# Push to the master branch of your GitHub project
-git push -u origin master
-```
->For **Markdown Docs**, your home page defaults to your `README.md` file at the **root** of your project.
->
->For **OpenAPI/Swagger Docs**, you should use a YAML (.yml or .yaml extension) or JSON (.json extension) file.
-
-#### **Push to GitLab**
 
 After your Markdown or OpenAPI documentation is prepared, push it to GitLab.
 
@@ -165,17 +143,7 @@ Select the Product of which you are intending to publish documentation for, then
 
 <!-- ##### 2a. Push to GitHub -->
 The publishing wizard will guide you through the steps required to get your documentation published.
-#### Step 1. Select a Git Provider
-<!-- tabs:start -->
-##### **Select GitHub**
-
-![Select Repo](assets/new-publishing/select-git.png)
-
-In this step, you select a git provider (only GitHub & GitLab available for now, but more options are coming soon!) and authorise your account to the documentation service with the necessary permissions to perform publishing.
-
-If this is your first time publishing a document, and you have not authorised your GitHub account to us before, you will be prompted to do so when you click next.
-
-##### **Select GitLab**
+#### Step 1. Select SHIP-HATS GitLab as Git Provider
 
 ![Select Repo](assets/new-publishing/select-git-gitlab.png)
 
@@ -187,12 +155,7 @@ If this is your first time publishing a document, and you have not authorised yo
 
 #### Step 2. Select a Repository
 <!-- tabs:start -->
-##### **Select GitHub Repository**
-![](assets/new-publishing/select-repo-github.png)
 
-In this step, you select a repository from your GitHub account to link up to your to-be published documentation. Your personal repositories along with the repositories of any organisation/teams of which your GitHub account is an admin of, will be available for selection. You can toggle these options under the 'Account' dropdown selection.
-
-##### **Select GitLab Repository**
 ![](assets/new-publishing/select-repo-gitlab.png)
 
 In this step, you select a repository from your GitLab account to link up to your to-be published documentation. Your personal repositories along with the repositories of any organisation/teams of which your GitLab account is an admin of, will be available for selection. You can toggle these options under the 'Groups' dropdown selection.
