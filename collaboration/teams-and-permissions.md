@@ -29,7 +29,7 @@ For collaboration with regards to the documentation's contents on GitHub's repos
   > Should you require further information please feel free to contact [Developer Portal Team](https://t.me/+2UFSzS6404ozNjA9).
 ### GitHub
 
-!> Documentation hosted on GitHub private repositories will migrate to SHIP-HATS GitLab.
+!> Migrating documentation from private GitHub repositories to SHIP-HATS GitLab.
 
 If your documentation is maintained by a team, you can either:
 

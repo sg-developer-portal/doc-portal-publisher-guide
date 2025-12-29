@@ -143,7 +143,7 @@ Select the Product of which you are intending to publish documentation for, then
 
 <!-- ##### 2a. Push to GitHub -->
 The publishing wizard will guide you through the steps required to get your documentation published.
-#### Step 1. Select SHIPHATS GitLab as Git Provider
+#### Step 1. Select SHIP-HATS GitLab as Git Provider
 
 ![Select Repo](assets/new-publishing/select-git-gitlab.png)
 
