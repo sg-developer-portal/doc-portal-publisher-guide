@@ -92,7 +92,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 </details>
 
 ```
-<details>
+<details open>
 <summary>Very Cool and Fancy Title</summary>
 
 <p>
