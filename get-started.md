@@ -60,7 +60,7 @@ The easiest way to get started with writing documentation is to use a tool calle
    git init
    ```
 
-3. Use the [Docsify CLI](https://docsify.js.org/#/quickstart) to generate a documentation site. This creates an index.html file along with a few markdown text files in your directory.
+3. Use the [Docsify CLI](https://docsify.js.org/#/quickstart) to generate a documentation site. This creates an index.html file along with a few markdown text files in your directory. You can get a index.html from our [innersource repo](https://sgts.gitlab-dedicated.com/innersource/sgts/devportal/docs-portal-local-preview) to get the same look and feel.
 
    ```bash
    # Initialize the documentation folder with index.html and some .md files
